@@ -277,169 +277,386 @@
 //   );
 // };
 
-import React from "react";
-import "./App.css";
+// import React from "react";
+// import "./App.css";
 
-export const Landing = () => {
-    return (
-        <div className="landing-page">
-            <div className="depth-frame">
-                <div className="div">
-                    <div className="depth-frame-2">
-                        <div className="depth-frame-wrapper">
-                            <div className="depth-frame-3">
-                                <div className="div-wrapper">
-                                    <div className="overlap-group-wrapper">
-                                        <div className="overlap-group">
-                                            <img className="vector" alt="Vector" src="src/images/vector-0.svg" />
-                                            <img className="img" alt="Vector" src="src/images/vector-1.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-4">
-                                    <div className="depth-frame-5">
-                                        <img className="fit-nest" alt="Fit nest" src="\src\images\fit-nest.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="depth-frame-6">
-                            <div className="depth-frame-7">
-                                <div className="depth-frame-8">
-                                    <div className="depth-frame-9">
-                                        <div className="text-wrapper">Explore</div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-10">
-                                    <div className="depth-frame-9">
-                                        <div className="text-wrapper-2">Challenges</div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-11">
-                                    <div className="depth-frame-9">
-                                        <div className="text-wrapper-3">Feed</div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-12">
-                                    <div className="depth-frame-9">
-                                        <div className="text-wrapper">TBD</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="depth-frame-13">
-                                <div className="depth-frame-14">
-                                    <div className="depth-frame-15">
-                                        <div className="vector-wrapper">
-                                            <img className="vector-2" alt="Vector" src="image.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-14">
-                                    <div className="depth-frame-15">
-                                        <div className="vector-wrapper">
-                                            <img className="vector-3" alt="Vector" src="vector-0-2.svg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="depth-frame-16" />
-                        </div>
+// export const Landing = () => {
+//     return (
+//         <div className="landing-page">
+//             <div className="depth-frame">
+//                 <div className="div">
+//                     <div className="depth-frame-2">
+//                         <div className="depth-frame-wrapper">
+//                             <div className="depth-frame-3">
+//                                 <div className="div-wrapper">
+//                                     <div className="overlap-group-wrapper">
+//                                         <div className="overlap-group">
+//                                             <img className="vector" alt="Vector" src="\src\images\vector-0.svg" />
+//                                             <img className="img" alt="Vector" src="\src\images\vector-1.svg" />
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-4">
+//                                     <div className="depth-frame-5">
+//                                         <img className="fit-nest" alt="Fit nest" src="\src\images\fit-nest.png" />
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <div className="depth-frame-6">
+//                             <div className="depth-frame-7">
+//                                 <div className="depth-frame-8">
+//                                     <div className="depth-frame-9">
+//                                         <div className="text-wrapper">Explore</div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-10">
+//                                     <div className="depth-frame-9">
+//                                         <div className="text-wrapper-2">Challenges</div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-11">
+//                                     <div className="depth-frame-9">
+//                                         <div className="text-wrapper-3">Feed</div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-12">
+//                                     <div className="depth-frame-9">
+//                                         <div className="text-wrapper">TBD</div>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                             <div className="depth-frame-13">
+//                                 <div className="depth-frame-14">
+//                                     <div className="depth-frame-15">
+//                                         <div className="vector-wrapper">
+//                                             <img className="vector-2" alt="Vector" src="\src\images\image.svg" />
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-14">
+//                                     <div className="depth-frame-15">
+//                                         <div className="vector-wrapper">
+//                                             <img className="vector-3" alt="Vector" src="\src\images\bell.svg" />
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                             <div className="depth-frame-16" />
+//                         </div>
+//                     </div>
+//                     <div className="depth-frame-17">
+//                         <div className="depth-frame-18">
+//                             <div className="depth-frame-19">
+//                                 <div className="depth-frame-20">
+//                                     <div className="img-wrapper">
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                             <div className="depth-frame-22">
+//                                 <div className="depth-frame-23">
+//                                     <div className="depth-frame-5">
+//                                         <div className="text-wrapper-4">Featured Challenges</div>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                             <div className="depth-frame-24">
+//                                 <div className="depth-frame-25">
+//                                     <div className="depth-frame-26">
+//                                         <div className="depth-frame-27" />
+//                                     </div>
+//                                     <div className="depth-frame-28">
+//                                         <div className="depth-frame-29">
+//                                             <div className="text-wrapper-5">Meditation Challenge</div>
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-30">
+//                                     <div className="depth-frame-26">
+//                                         <div className="depth-frame-31" />
+//                                     </div>
+//                                     <div className="depth-frame-28">
+//                                         <div className="depth-frame-29">
+//                                             <div className="text-wrapper-5">Yoga Challenge</div>
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-32">
+//                                     <div className="depth-frame-26">
+//                                         <div className="depth-frame-33" />
+//                                     </div>
+//                                     <div className="depth-frame-28">
+//                                         <div className="depth-frame-29">
+//                                             <div className="text-wrapper-5">Sleep Challenge</div>
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-34">
+//                                     <div className="depth-frame-26">
+//                                         <div className="depth-frame-35" />
+//                                     </div>
+//                                     <div className="depth-frame-28">
+//                                         <div className="depth-frame-29">
+//                                             <div className="text-wrapper-6">Gratitude Challenge</div>
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-36">
+//                                     <div className="depth-frame-37">
+//                                         <div className="depth-frame-38">
+//                                             <div className="depth-frame-39">
+//                                                 <div className="depth-frame-26">
+//                                                     <div className="depth-frame-40" />
+//                                                 </div>
+//                                                 <div className="depth-frame-28">
+//                                                     <div className="depth-frame-29">
+//                                                         <div className="text-wrapper-6">Walking Challenge</div>
+//                                                     </div>
+//                                                 </div>
+//                                             </div>
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                                 <div className="depth-frame-41">
+//                                     <div className="depth-frame-42" />
+//                                     <div className="depth-frame-28">
+//                                         <div className="depth-frame-29">
+//                                         </div>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
+
+import React from 'react'
+
+import { Helmet } from 'react-helmet'
+
+import './App.css'
+
+const Landing = (props) => {
+  return (
+    <div className="landing-page-container">
+      <Helmet>
+        <title>exported project</title>
+      </Helmet>
+      <div className="landing-page-landing-page">
+        <div className="landing-page-depth0-frame0">
+          <div className="landing-page-depth1-frame0">
+            <div className="landing-page-depth2-frame0">
+              <div className="landing-page-depth3-frame0">
+                <div className="landing-page-depth4-frame0">
+                  <div className="landing-page-depth5-frame0">
+                    <img
+                      src="\src\images\vector-0.svg"
+                      alt="Depth6Frame0110"
+                      className="landing-page-depth6-frame0"
+                    />
+                  </div>
+                  <div className="landing-page-depth5-frame1">
+                    <div className="landing-page-depth6-frame001">
+                      <span className="landing-page-text">
+                        <span>FitNest</span>
+                      </span>
                     </div>
-                    <div className="depth-frame-17">
-                        <div className="depth-frame-18">
-                            <div className="depth-frame-19">
-                                <div className="depth-frame-20">
-                                    <div className="img-wrapper">
-                                        <img className="depth-frame-21" alt="Depth frame" src="depth-7-frame-0-2.png" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="depth-frame-22">
-                                <div className="depth-frame-23">
-                                    <div className="depth-frame-5">
-                                        <div className="text-wrapper-4">Featured Challenges</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="depth-frame-24">
-                                <div className="depth-frame-25">
-                                    <div className="depth-frame-26">
-                                        <div className="depth-frame-27" />
-                                    </div>
-                                    <div className="depth-frame-28">
-                                        <div className="depth-frame-29">
-                                            <div className="text-wrapper-5">Meditation Challenge</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-30">
-                                    <div className="depth-frame-26">
-                                        <div className="depth-frame-31" />
-                                    </div>
-                                    <div className="depth-frame-28">
-                                        <div className="depth-frame-29">
-                                            <div className="text-wrapper-5">Yoga Challenge</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-32">
-                                    <div className="depth-frame-26">
-                                        <div className="depth-frame-33" />
-                                    </div>
-                                    <div className="depth-frame-28">
-                                        <div className="depth-frame-29">
-                                            <div className="text-wrapper-5">Sleep Challenge</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-34">
-                                    <div className="depth-frame-26">
-                                        <div className="depth-frame-35" />
-                                    </div>
-                                    <div className="depth-frame-28">
-                                        <div className="depth-frame-29">
-                                            <div className="text-wrapper-6">Gratitude Challenge</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-36">
-                                    <div className="depth-frame-26">
-                                        <div className="depth-frame-37" />
-                                    </div>
-                                    <div className="depth-frame-38">
-                                        <div className="depth-frame-39">
-                                            <div className="text-wrapper-7">Mindfulness Challenge</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-40">
-                                    <div className="depth-frame-26">
-                                        <div className="depth-frame-41" />
-                                    </div>
-                                    <div className="depth-frame-28">
-                                        <div className="depth-frame-29">
-                                            <div className="text-wrapper-7">Body Scan Challenge</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="depth-frame-42">
-                                    <div className="depth-frame-26">
-                                        <div className="depth-frame-43" />
-                                    </div>
-                                    <div className="depth-frame-28">
-                                        <div className="depth-frame-29">
-                                            <div className="text-wrapper-6">Walking Challenge</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
+              <div className="landing-page-depth3-frame1">
+                <div className="landing-page-depth4-frame01">
+                  <div className="landing-page-depth5-frame01">
+                    <div className="landing-page-depth6-frame002">
+                      <span className="landing-page-text02">
+                        <span>Explore</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame11">
+                    <div className="landing-page-depth6-frame003">
+                      <span className="landing-page-text04">
+                        <span>Challenges</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame2">
+                    <div className="landing-page-depth6-frame004">
+                      <span className="landing-page-text06">
+                        <span>Feed</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame3">
+                    <div className="landing-page-depth6-frame005">
+                      <span className="landing-page-text08">
+                        <span>TBD</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="landing-page-depth4-frame1">
+                  <div className="landing-page-depth5-frame02">
+                    <div className="landing-page-depth6-frame006">
+                      <img
+                        src="/src/images/image.svg"
+                        alt="Depth7Frame0135"
+                        className="landing-page-depth7-frame0"
+                      />
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame12">
+                    <div className="landing-page-depth6-frame007">
+                      <img
+                        src="/src/images/bell.svg"
+                        alt="Depth7Frame0140"
+                        className="landing-page-depth7-frame001"
+                      />
+                    </div>
+                  </div>
+                </div> */}
+                <div className="landing-page-depth4-frame2"></div>
+              </div>
             </div>
+            <div className="landing-page-depth2-frame1">
+              <div className="landing-page-depth3-frame01">
+                <div className="landing-page-depth4-frame02">
+                  <div className="landing-page-depth5-frame03">
+                    <div className="landing-page-depth6-frame008">
+                    <img src = "/src/images/main2.png" className="idk"></img>
+                      <div className="landing-page-depth7-frame002">
+                        <div className="landing-page-depth8-frame0">
+                          <div className="landing-page-depth9-frame0">
+                            <div className="landing-page-depth10-frame0">
+                              <div className="landing-page-depth11-frame0">
+                                <span className="landing-page-text10">
+                                  <span>Discover the benefits of Vitality</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="landing-page-depth10-frame1">
+                              <div className="landing-page-depth11-frame01">
+                                <span className="landing-page-text12">
+                                  <span>
+                                    Unlock your potential with a personalized
+                                    wellness journey. Get started with a
+                                    challenge or explore the app to find what
+                                    works best for you.
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="landing-page-depth8-frame1">
+                          <button className="landing-page-start-journey-button">
+                            <div className="landing-page-depth10-frame01">
+                              <div className="landing-page-depth11-frame02">
+                                <span className="landing-page-text14">
+                                  <span>Start your journey</span>
+                                </span>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="landing-page-depth4-frame11">
+                  <div className="landing-page-depth5-frame04">
+                    <div className="landing-page-depth6-frame009">
+                      <span className="landing-page-text16">
+                        <span>Featured Challenges</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="landing-page-depth4-frame21">
+                  <div className="landing-page-depth5-frame05">
+                    <div className="landing-page-depth6-frame010">
+                    <img src = "\src\images\meditation.png"></img>
+                      <div className="landing-page-depth7-frame003"></div>
+                    </div>
+                    <div className="landing-page-depth6-frame1">
+                      <div className="landing-page-depth7-frame004">
+                        <span className="landing-page-text18">
+                          <span>Meditation Challenge</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame13">
+                    <div className="landing-page-depth6-frame011">
+                    <img src = "\src\images\yoga.png"></img>
+                      <div className="landing-page-depth7-frame005"></div>
+                    </div>
+                    <div className="landing-page-depth6-frame11">
+                      <div className="landing-page-depth7-frame006">
+                        <span className="landing-page-text20">
+                          <span>Yoga Challenge</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame21">
+                    <div className="landing-page-depth6-frame012">
+                    <img src = "\src\images\sleep.png"></img>
+                      <div className="landing-page-depth7-frame007"></div>
+                    </div>
+                    <div className="landing-page-depth6-frame12">
+                      <div className="landing-page-depth7-frame008">
+                        <span className="landing-page-text22">
+                          <span>Sleep Challenge</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame31">
+                    <div className="landing-page-depth6-frame013">
+                    <img src = "\src\images\gratitude.png"></img>
+                      <div className="landing-page-depth7-frame009"></div>
+                    </div>
+                    <div className="landing-page-depth6-frame13">
+                      <div className="landing-page-depth7-frame010">
+                        <span className="landing-page-text24">
+                          <span>Gratitude Challenge</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame5">
+                    <div className="landing-page-depth6-frame014">
+                    <img src = "\src\images\walking.png"></img>
+                      <div className="landing-page-depth7-frame011"></div>
+                    </div>
+                    <span className="landing-page-text26">
+                      <span>Walking Challenge</span>
+                    </span>
+                    <div className="landing-page-depth6-frame14">
+                      <div className="landing-page-depth7-frame012">
+                      </div>
+                    </div>
+                  </div>
+                  <div className="landing-page-depth5-frame6">
+                    <div className="landing-page-depth6-frame15">
+                      <div className="landing-page-depth7-frame013"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    );
-};
+      </div>
+    </div>
+  )
+}
+
+
 
 
 export default Landing

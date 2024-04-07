@@ -12,7 +12,9 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background-color: white;
+  background-color: #051120;
+  font-family: 'Roboto', sans-serif;
+
 }
 .galileodesign-depth0-frame0 {
   width: 100%;
@@ -22,7 +24,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   flex-direction: column;
-  background-color: white;
+  background-color: #051120;
 }
 .galileodesign-depth1-frame0 {
   width: 100%;
@@ -39,7 +41,7 @@
   padding: 12px 40px;
   align-items: center;
   flex-shrink: 0;
-  border-color: white;
+  border-color: #051120;
   border-style: solid;
   border-width: 0 0 1px;
   justify-content: space-between;
@@ -87,7 +89,7 @@
   flex-direction: column;
 }
 .galileodesign-text {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 18px;
   font-style: Bold;
@@ -97,15 +99,19 @@
   line-height: 22.5px;
   font-stretch: normal;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+
 }
 .galileodesign-depth3-frame1 {
-  gap: 50px;
+  gap: 200px;
   width: 1106.28125px;
   height: 40px;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
   justify-content: flex-end;
+  margin-left: -40px !important;
+  row-gap: 20px;
 }
 .galileodesign-depth4-frame01 {
   /* gap: 36px; */
@@ -124,7 +130,7 @@
   flex-direction: column;
 }
 .galileodesign-homebutton {
-  background-color: white;
+  background-color:  #355164;;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
@@ -138,7 +144,7 @@
   flex-direction: column;
 }
 .galileodesign-text02 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Medium;
@@ -150,11 +156,13 @@
   text-decoration: none;
 }
 .galileodesign-pointbutton {
-  background-color: white;
+  background-color:  #355164;;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
   flex-direction: column;
+  margin-left: 16px;
+  gap: 20px;
 }
 .galileodesign-depth6-frame003 {
   display: flex;
@@ -163,7 +171,7 @@
   flex-direction: row;
 }
 .galileodesign-text04 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17x;
   font-style: Medium;
@@ -173,6 +181,8 @@
   line-height: 21px;
   font-stretch: normal;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+
 }
 .galileodesign-depth5-frame2 {
   width: 74.125px;
@@ -189,7 +199,7 @@
   flex-direction: column;
 }
 .galileodesign-text06 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Medium;
@@ -199,6 +209,8 @@
   line-height: 21px;
   font-stretch: normal;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+
 }
 .galileodesign-depth4-frame2 {
   width: 40px;
@@ -218,6 +230,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   justify-content: center;
+  margin-left: -40px !important;
 }
 .galileodesign-depth3-frame01 {
   width: 960px;
@@ -226,6 +239,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   flex-direction: column;
+  margin-left: -40px !important;
 }
 .galileodesign-title {
   gap: 12px;
@@ -265,7 +279,7 @@
   flex-direction: column;
 }
 .galileodesign-text08 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 36px;
   font-style: ExtraBold;
@@ -298,7 +312,7 @@
   
 }
 .galileodesign-text10 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 22px;
   text-align: left;
@@ -308,6 +322,8 @@
   font-stretch: normal;
   text-decoration: none;
   margin-right: -0.86px;
+  font-family: 'Roboto', sans-serif;
+
   
 }
 .galileodesign-depth4-frame21 {
@@ -319,7 +335,11 @@
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
-  background-color: white;
+
+  background-color: #051120;
+  border: solid 2px #355164;
+  margin-bottom: 2px;
+
 }
 .galileodesign-depth5-frame004 {
   gap: 16px;
@@ -366,7 +386,7 @@
   flex-direction: column;
 }
 .galileodesign-text12 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Medium;
@@ -385,6 +405,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   flex-direction: column;
+  /* margin-left: -40px !important; */
 }
 .galileodesign-depth8-frame001 {
   display: flex;
@@ -393,7 +414,7 @@
   flex-direction: column;
 }
 .galileodesign-text14 {
-  color: rgba(84, 145, 84, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Regular;
@@ -473,7 +494,9 @@
   flex-shrink: 0;
   border-radius: 4px;
   flex-direction: column;
-  background-color: rgba(40, 198, 40, 1);
+  background-color: #051120;
+  border: solid 2px #355164;
+
 }
 .galileodesign-depth4-frame4 {
   gap: 16px;
@@ -484,7 +507,8 @@
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
-  background-color: white;
+  background-color: #051120;
+  border: solid 2px #355164;
 }
 .galileodesign-depth5-frame006 {
   gap: 16px;
@@ -532,7 +556,7 @@
   flex-direction: column;
 }
 .galileodesign-text16 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Medium;
@@ -559,7 +583,7 @@
   flex-direction: column;
 }
 .galileodesign-text18 {
-  color: rgba(84, 145, 84, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Regular;
@@ -623,7 +647,7 @@
   flex-shrink: 0;
   border-radius: 4px;
   flex-direction: column;
-  background-color: white;
+  background-color: #051120;;
 }
 .galileodesign-depth6-frame11 {
   width: 696px;
@@ -634,7 +658,8 @@
   flex-shrink: 0;
   border-radius: 4px;
   flex-direction: column;
-  background-color: rgba(40, 198, 40, 1);
+  background-color: #051120;
+
 }
 .galileodesign-depth4-frame6 {
   width: 960px;
@@ -659,7 +684,7 @@
   flex-direction: column;
 }
 .galileodesign-text20 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 22px;
   font-style: Bold;
@@ -679,7 +704,8 @@
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
-  background-color: white;
+  background-color: #051120;
+  border: solid 2px #355164;
 }
 .galileodesign-depth5-frame009 {
   gap: 16px;
@@ -727,7 +753,7 @@
   flex-direction: column;
 }
 .galileodesign-text22 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Medium;
@@ -754,7 +780,7 @@
   flex-direction: column;
 }
 .galileodesign-text24 {
-  color: rgba(84, 145, 84, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Regular;
@@ -800,7 +826,7 @@
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
-  background-color: rgba(249, 249, 249, 1);
+  background-color: #051120;
 }
 .galileodesign-depth5-frame010 {
   gap: 16px;
@@ -848,7 +874,7 @@
   flex-direction: column;
 }
 .galileodesign-text26 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Medium;
@@ -875,7 +901,7 @@
   flex-direction: column;
 }
 .galileodesign-text28 {
-  color: rgba(84, 145, 84, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Regular;
@@ -969,7 +995,7 @@
   flex-direction: column;
 }
 .galileodesign-text30 {
-  color: rgba(15, 25, 15, 1);
+  color: whtie;
   height: auto;
   font-size: 17px;
   font-style: Medium;
@@ -996,7 +1022,7 @@
   flex-direction: column;
 }
 .galileodesign-text32 {
-  color: rgba(84, 145, 84, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Regular;
@@ -1090,7 +1116,7 @@
   flex-direction: column;
 }
 .galileodesign-text34 {
-  color: rgba(15, 25, 15, 1);
+  color: white;
   height: auto;
   font-size: 17px;
   font-style: Medium;

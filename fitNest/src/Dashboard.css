@@ -99,7 +99,7 @@
   text-decoration: none;
 }
 .galileodesign-depth3-frame1 {
-  gap: 32px;
+  gap: 150px;
   width: 1106.28125px;
   height: 40px;
   display: flex;
@@ -108,7 +108,7 @@
   justify-content: flex-end;
 }
 .galileodesign-depth4-frame01 {
-  gap: 36px;
+  /* gap: 36px; */
   width: 374.71875px;
   height: 40px;
   display: flex;

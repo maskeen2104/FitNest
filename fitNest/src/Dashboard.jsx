@@ -261,7 +261,7 @@ const Dashboard = (props) => {
                     <button className="galileodesign-pointbutton">
                       <div className="galileodesign-depth6-frame003">
                         <span className="galileodesign-text04">
-                          <span>Points</span>
+                          <span>2</span>
                         </span>
                       </div>
                     </button>

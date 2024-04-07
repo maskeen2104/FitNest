@@ -86,7 +86,7 @@ const handleClickPullUps = () => {
                       <div className="galileodesign-depth6-frame003">
                         <img src="/src/images/coin.png" alt="Coin" className="coin-icon" />
                         <span className="galileodesign-text04">
-                          <span>Points</span>
+                          <span>10</span>
                         </span>
                       </div>
                     </button>
@@ -206,7 +206,7 @@ const handleClickPullUps = () => {
                         <div className="galileodesign-depth7-frame12">
                           <div className="galileodesign-depth8-frame007">
                             <span className="galileodesign-text24">
-                              <span>3/5</span>
+                              <span>5/5</span>
                             </span>
                           </div>
                         </div>

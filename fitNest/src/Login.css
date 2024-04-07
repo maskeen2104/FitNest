@@ -1,0 +1,525 @@
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+body{
+    background-color: #ffffff;
+}
+.login-page {
+    align-items: flex-start;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    position: relative;
+  }
+  
+  .login-page .depth-frame {
+    align-items: flex-start;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .login-page .div {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .login-page .depth-frame-2 {
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #e5e8ea;
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    padding: 12px 40px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .login-page .depth-frame-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 32px;
+    height: 22.5px;
+    position: relative;
+    width: 99.03px;
+  }
+  
+  .login-page .depth-frame-3 {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    height: 22.5px;
+    position: relative;
+    width: 99.03px;
+  }
+  
+  .login-page .div-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 16px;
+    position: relative;
+    width: 16px;
+  }
+  
+  .login-page .depth-frame-4 {
+    background-image: url(./vector-0.svg);
+    background-size: 100% 100%;
+    height: 16px;
+    margin-left: -1509px;
+    margin-top: -110.5px;
+    overflow: hidden;
+    position: relative;
+    width: 16px;
+  }
+  
+  .login-page .vector {
+    height: 16px;
+    left: -1509px;
+    position: absolute;
+    top: -110px;
+    width: 16px;
+  }
+  
+  .login-page .depth-frame-5 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 14px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 14px;
+  }
+  
+  .login-page .depth-frame-6 {
+    height: 12.33px;
+    position: relative;
+    width: 12.33px;
+  }
+  
+  .login-page .depth-frame-7 {
+    height: 13.88px;
+    margin-bottom: -12.33px;
+    position: relative;
+    width: 13.88px;
+  }
+  
+  .login-page .depth-frame-8 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 22.5px;
+    position: relative;
+    width: 67.03px;
+  }
+  
+  .login-page .depth-frame-9 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  
+  .login-page .text-wrapper {
+    color: #ffffff;
+    font-family: "Lexend-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.27px;
+    line-height: 22.5px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  
+  .login-page .depth-frame-10 {
+    align-items: flex-start;
+    display: flex;
+    gap: 32px;
+    height: 40px;
+    justify-content: flex-end;
+    position: relative;
+    width: 1100.97px;
+  }
+  
+  .login-page .depth-frame-11 {
+    height: 40px;
+    position: relative;
+    width: 84px;
+  }
+  
+  .login-page .depth-frame-12 {
+    align-items: flex-start;
+    display: flex;
+    height: 735px;
+    justify-content: center;
+    padding: 20px 160px;
+    position: relative;
+    width: 1280px;
+  }
+  
+  .login-page .depth-frame-13 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 695px;
+    padding: 20px 0px;
+    position: relative;
+    width: 512px;
+  }
+  
+  .login-page .depth-frame-14 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 58px;
+    padding: 20px 16px 8px;
+    position: relative;
+    width: 512px;
+  }
+  
+  .login-page .depth-frame-15 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  
+  .login-page .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Lexend-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    line-height: 30px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  
+  .login-page .depth-frame-16 {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    padding: 12px 16px;
+    position: relative;
+    width: 512px;
+  }
+  
+  .login-page .depth-frame-17 {
+    align-items: flex-end;
+    background-color: #ffffff;
+    display: flex;
+    gap: 16px;
+    height: 56px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-18 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 56px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-19 {
+    align-items: center;
+    display: flex;
+    height: 56px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .username-text-box {
+    align-items: flex-start;
+    background-color: var(--variable-collection-light-gray);
+    border-radius: 12px;
+    display: flex;
+    height: 56px;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-21 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    position: relative;
+    width: 108.98px;
+  }
+  input [type="text"], textarea{
+    background-color: var(--variable-collection-light-gray);
+    color:var(--variable-collection-dark-green);
+  }
+  ::placeholder {
+    color: var(--variable-collection-dark-green);
+    font-family: "Lexend-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-right: -0.86px;
+    margin-top: -1px;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .login-page .depth-frame-22 {
+    align-items: flex-end;
+    display: flex;
+    gap: 16px;
+    height: 56px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-23 {
+    align-items: flex-start;
+    background-color: #e5e8ea;
+    border-radius: 12px;
+    display: flex;
+    height: 56px;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-24 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    position: relative;
+    width: 74.14px;
+  }
+  
+  .login-page .text-wrapper-dark-green {
+    color: var(--variable-collection-dark-green);
+    font-family: "Lexend-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-right: -0.86px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .login-page .depth-frame-25 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    padding: 0px 16px;
+    position: relative;
+    width: 512px;
+  }
+  
+  .login-page .depth-frame-26 {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    height: 48px;
+    padding: 12px 0px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-27 {
+    align-items: center;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    position: relative;
+    width: 24px;
+  }
+  
+  .login-page .depth-frame-28 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .login-page .vector-wrapper {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .login-page .img {
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+  }
+  
+  .login-page .depth-frame-29 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    position: relative;
+    width: 113.66px;
+  }
+  
+  .login-page .text-wrapper-5 {
+    color: var(--variable-collection-dark-green);
+    font-family: "Lexend-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-right: -0.34px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .login-page .depth-frame-30 {
+    align-items: flex-start;
+    display: flex;
+    height: 64px;
+    padding: 12px 16px;
+    position: relative;
+    width: 512px;
+  }
+  
+  .login-page .depth-frame-31 {
+    align-items: center;
+    background-color: var(--variable-collection-soft-green);
+    border-radius: 12px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px 16px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-32 {
+    align-items: flex-start;
+    background-color: var(--variable-collection-soft-green);
+    display: flex;
+    flex-direction: column;
+    height: 21px;
+    position: relative;
+    width: 50.97px;
+  }
+  
+  .login-page .text-wrapper-6 {
+    color: #0f230f;
+    font-family: "Lexend-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.21px;
+    line-height: 21px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .login-page .depth-frame-33 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 37px;
+    padding: 4px 16px 12px;
+    position: relative;
+    width: 512px;
+  }
+  
+  .login-page .text-wrapper-7 {
+    color: #8cce8c;
+    font-family: "Lexend-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .login-page .depth-frame-34 {
+    align-items: center;
+    background-color: #214921;
+    border-radius: 12px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px 16px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .login-page .depth-frame-35 {
+    align-items: flex-start;
+    background-color: #214921;
+    display: flex;
+    flex-direction: column;
+    height: 21px;
+    position: relative;
+    width: 134.59px;
+  }
+  
+  .login-page .text-wrapper-8 {
+    color: #ffffff;
+    font-family: "Lexend-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.21px;
+    line-height: 21px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  

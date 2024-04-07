@@ -188,21 +188,64 @@ import './Landing.css';
 const Body = ({ navigate }) => {
   return (
     <div className="landing-page-container">
+                    <div className="galileodesign-depth2-frame0">
+                <div className="galileodesign-depth3-frame0">
+                  <div className="galileodesign-depth4-frame0">
+                    <div className="galileodesign-depth5-frame0">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3798a9d0b87570754db1150e552bd05cfe9bd70eadfc7764a0f07862ac781ae?apiKey=6dc1b1172a21495ea8a406717dc53c8f&"
+                    alt="Depth6Frame06252"
+                    className="galileodesign-depth6-frame0"/>
+                    </div>
+                    <div className="galileodesign-depth5-frame1">
+                      <div className="galileodesign-depth6-frame001">
+                        <span className="galileodesign-text">
+                          <span>FitNest</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="galileodesign-depth3-frame1">
+                  <div className="galileodesign-depth4-frame01">
+                    <button className="galileodesign-homebutton"onClick={()=> navigate("/dashboard")}>
+                      <div className="galileodesign-depth6-frame002">
+                        <span className="galileodesign-text02">
+                          <span >Home</span>
+                        </span>
+                      </div>
+                    </button>
+                    <button className="galileodesign-pointbutton">
+                      <div className="galileodesign-depth6-frame003">
+                        <span className="galileodesign-text04">
+                          <span>Points</span>
+                        </span>
+                      </div>
+                    </button>
+                  </div>
+                  <div className="galileodesign-depth4-frame2"></div>
+                </div>
+                  </div>
+          </div>
+        </div>
+        <hr />
+
+    
       <Helmet>
         <title>Main</title>
       </Helmet>
+      
       <div className="content-section">
         <div className="image-overlay">
-          <img src="/src/images/gym.jpg" alt="Gym" className="feature-image"/>
-          <div className="overlay-text">
+          <img src="/src/images/mainImage.jpg" alt="Gym" className="feature-image" style = {{ marginLeft : "-100px"}}></img>
+          <div className="overlay-text" style = {{ marginLeft : "-20px"}}>
             <h1>FitNest</h1>
             <p>Unlock your potential with a personalized wellness journey. Get started with a challenge or explore the app to find what works best for you.</p>
             <button className="start-journey-button" onClick={() => navigate("/login")}>Start your journey</button>
           </div>
         </div>
       </div>
+      
       {/* Challenges Section omitted for brevity */}
     </div>
+
   );
 };
 

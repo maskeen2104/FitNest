@@ -78,7 +78,7 @@ const handleClickPullUps = () => {
                     <button className="galileodesign-pointbutton">
                       <div className="galileodesign-depth6-frame003">
                         <span className="galileodesign-text04">
-                          <span>2</span>
+                          <span>Points</span>
                         </span>
                       </div>
                     </button>

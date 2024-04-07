@@ -31,9 +31,19 @@
   height: auto;
 }
 
+.galileodesign-depth2-frame0 {
+  margin-left: 100px;
+}
+
+.galileodesign-depth3-frame1 {
+  margin-left: 300px;
+}
+
 .feature-image {
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 20px 20px 20px 44px;
+  height: 600px !important;
+  margin-top: 70px;
 }
 
 .intro-text h1 {
@@ -110,21 +120,23 @@
   width: 100%;
   display: block; /* Remove default image margins */
   max-width: 100%;
-  height: auto; /* Keep image aspect ratio */
+  height: 75%; /* Keep image aspect ratio */
 }
 
 .overlay-text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%); /* Center the overlay */
   color: var(--white);
   text-align: center;
   width: 100%; /* Adjust based on your design preference */
   padding: 20px; /* Padding for text */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent overlay */
 }
-
+.overlay-text h1 {
+  top: 40%;
+}
 .start-journey-button {
   background-color: var(--soft-green);
   color: var(--white);

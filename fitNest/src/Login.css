@@ -27,16 +27,15 @@ body{
     flex-direction: column;
     height: 800px;
     position: relative;
-    width: 1800px;
+    width: 95%;
   }
   
   .login-page .div {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: 800px;
     position: relative;
-    width: 1800px;
   }
   
   .login-page .depth-frame-2 {
@@ -49,7 +48,7 @@ body{
     justify-content: space-between;
     padding: 12px 40px;
     position: relative;
-    width: 1280px;
+    width: 100%;
   }
   
   .login-page .depth-frame-wrapper {
@@ -58,7 +57,7 @@ body{
     /* gap: 32px; */
     height: 22.5px;
     position: relative;
-    width: 1280px;
+    width: 100%;
   }
   
   .login-page .depth-frame-3 {
@@ -67,7 +66,7 @@ body{
     gap: 16px;
     height: 22.5px;
     position: relative;
-    width: 99.03px;
+    width: 100%;
   }
   
   .login-page .div-wrapper {
@@ -76,7 +75,6 @@ body{
     flex-direction: column;
     height: 16px;
     position: relative;
-    width: 16px;
   }
   
   .login-page .depth-frame-4 {
@@ -106,13 +104,13 @@ body{
     left: 0;
     position: absolute;
     top: 0;
-    width: 14px;
+    width: 100%;
   }
   
   .login-page .depth-frame-6 {
     height: 12.33px;
     position: relative;
-    width: 12.33px;
+    width: 100%;
   }
   
   .login-page .depth-frame-7 {
@@ -170,13 +168,13 @@ body{
     height: 40px;
     justify-content: flex-end;
     position: relative;
-    width: 1100.97px;
+    width: 100%;
   }
   
   .login-page .depth-frame-11 {
     height: 40px;
     position: relative;
-    width: 84px;
+    width: 100%;
   }
   
   .login-page .depth-frame-12 {
@@ -184,19 +182,19 @@ body{
     display: flex;
     height: 735px;
     justify-content: center;
-    padding: 20px 160px;
+    padding: 4% 30%;
     position: relative;
-    width: 1280px;
+    width: 100%;
   }
   
   .login-page .depth-frame-13 {
     align-items: flex-start;
-    display: flex;
+    display:flex;
     flex-direction: column;
     height: 695px;
-    padding: 20px 0px;
+    padding: 30px 0px;
     position: relative;
-    width: 512px;
+    width: 100%;
   }
   
   .login-page .depth-frame-14 {
@@ -206,7 +204,7 @@ body{
     height: 58px;
     padding: 20px 16px 8px;
     position: relative;
-    width: 512px;
+    width: 70%;
   }
   
   .login-page .depth-frame-15 {
@@ -240,7 +238,7 @@ body{
     height: 80px;
     padding: 12px 16px;
     position: relative;
-    width: 512px;
+    width: 100%;
   }
   
   .login-page .depth-frame-17 {
@@ -250,7 +248,6 @@ body{
     gap: 16px;
     height: 56px;
     position: relative;
-    width: 480px;
   }
   
   .login-page .depth-frame-18 {
@@ -259,7 +256,6 @@ body{
     flex-direction: column;
     height: 56px;
     position: relative;
-    width: 480px;
   }
   
   .login-page .depth-frame-19 {
@@ -267,7 +263,6 @@ body{
     display: flex;
     height: 56px;
     position: relative;
-    width: 480px;
   }
   
   .login-page .username-text-box {
@@ -303,6 +298,7 @@ body{
     margin-top: -1px;
     white-space: nowrap;
     width: fit-content;
+    align-items: center;
   }
 
   .login-page .depth-frame-22 {
@@ -311,7 +307,6 @@ body{
     gap: 16px;
     height: 56px;
     position: relative;
-    width: 480px;
   }
   
   .login-page .depth-frame-24 {
@@ -320,7 +315,6 @@ body{
     flex-direction: column;
     height: 24px;
     position: relative;
-    width: 74.14px;
   }
   
   .login-page .depth-frame-26 {
@@ -330,7 +324,6 @@ body{
     height: 48px;
     padding: 12px 0px;
     position: relative;
-    width: 480px;
   }
   
   .login-page .depth-frame-27 {
@@ -339,7 +332,6 @@ body{
     height: 24px;
     justify-content: center;
     position: relative;
-    width: 24px;
   }
   
   .login-page .depth-frame-28 {
@@ -348,7 +340,6 @@ body{
     flex-direction: column;
     height: 24px;
     position: relative;
-    width: 24px;
   }
   
   .login-page .vector-wrapper {
@@ -371,7 +362,6 @@ body{
     flex-direction: column;
     height: 24px;
     position: relative;
-    width: 113.66px;
   }
   
   .login-page .depth-frame-30 {
@@ -380,7 +370,6 @@ body{
     height: 64px;
     padding: 12px 16px;
     position: relative;
-    width: 512px;
   }
   
   .login-page .sign-in-button {
@@ -432,7 +421,6 @@ body{
     height: 37px;
     padding: 4px 16px 12px;
     position: relative;
-    width: 512px;
   }
   .login-page .depth-frame-register-button {
     align-items: center;

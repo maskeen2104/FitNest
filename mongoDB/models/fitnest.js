@@ -8,7 +8,8 @@ const fitnestSchema = new Schema({
     challenges: [{
         progress: String,
         completed: Boolean,
-        pushUpsToDo: Number
+        pushUpsToDo: Number,
+        daysCompleted: Number,
     }]
 });
 const Fitnest = mongoose.model("fitnest", fitnestSchema);

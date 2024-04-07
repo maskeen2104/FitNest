@@ -4,7 +4,7 @@ import cv2
 
 
 model = YOLO("yolov8n-pose.pt")
-cap = cv2.VideoCapture("/Users/maskeenkaur/FitNest/model/RPReplay_Final1712432536.mov")
+cap = cv2.VideoCapture("/Users/maskeenkaur/FitNest/model/RPReplay_Final1712448145.mov")
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 
@@ -22,7 +22,7 @@ while cap.isOpened():
       break
     frame_count += 1
     results = model.track(im0, verbose=False)  # Tracking recommended
-    #results = model.predict(im0)  # Prediction also supported
+    results = model.predict(im0)  # Prediction also supported
     im0 = gym_object.start_counting(im0, results, frame_count)
 
 cv2.destroyAllWindows()

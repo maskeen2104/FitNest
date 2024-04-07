@@ -4,7 +4,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './Login';
 import Landing from './Landing'; // Assuming you split Landing content into a separate component
 import Register from './Register';
-import Explore from './Explore.jsx';
+import Explore from './Explore';
 
 import PushUps from './challenge/challenge1.jsx'
 import PullUps from './challenge/challenge2.jsx'

@@ -1,14 +1,14 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
+import axios from 'axios';
+import { load } from 'cheerio';
 
-async function fetchEvents() {
+export const fetchEvents = async () => {
   try {
     // Fetch the webpage HTML
     const response = await axios.get('https://community-events.arcteryx.com/');
     const html = response.data;
 
     // Load HTML into cheerio
-    const $ = cheerio.load(html);
+    const $ = load(html);
 
     // Extract event information
     const events = [];
@@ -27,8 +27,6 @@ async function fetchEvents() {
     console.error('Error fetching events:', error);
     return [];
   }
-}
+};
 
-fetchEvents().then(events => {
-  console.log(events);
-});
+

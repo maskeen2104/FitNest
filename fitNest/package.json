@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+<<<<<<< HEAD
+    "react-helmet": "^6.1.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0"
+=======
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+>>>>>>> d15423235dc09d6eec574a1ae9f0722e6215ab7b
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {

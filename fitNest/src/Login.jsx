@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
-import {useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import "./Register.jsx"
 
 export const Login = () => {
   return (
@@ -76,19 +77,19 @@ export const Login = () => {
                 </div>
               </div>
               <div className="depth-frame-30">
-                <div className="sign-in-button">
+                <div className="sign-in-button" onClick={()=> {useNavigate('./Dashboard')}}>
                   <div className="depth-frame-32">
                     <div className="depth-frame-9">
-                      <div className="text-wrapper-sign" onClick={()=> {useNavigate('./Dashboard')}}>Sign in</div>
+                      <div className="text-wrapper-sign">Sign in</div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="depth-frame-30">
-                <div className="depth-frame-register-button">
+                <div className="depth-frame-register-button" onClick={()=> {useNavigate('./Register')}}>
                   <div className="depth-frame-35">
                     <div className="depth-frame-9">
-                      <div className="text-wrapper-reg" onClick={()=> {useNavigate('./Register')}}>Create an account</div>
+                      <div className="text-wrapper-reg">Create an account</div>
                     </div>
                   </div>
                 </div>

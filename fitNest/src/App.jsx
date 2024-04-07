@@ -19,7 +19,7 @@ const App = () => {
         <Route path = "/challenge1" element = {<PushUps />} />
         <Route path = "/dashboard" element = {<Dashboard />} />
       </Routes>
-    </div>
+    // </div>
   );
 };
 

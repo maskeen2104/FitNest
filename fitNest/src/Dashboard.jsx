@@ -1,50 +1,49 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
-import { useState, useEffect } from 'react'
-import './Dashboard.css'
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import './Dashboard.css';
+import axios from 'axios';
+import ChatBot from "./chatbot.jsx"; // Ensure the file name matches and is correctly imported
 
-
-
-
-const Dashboard = (props) => {
+const Dashboard = () => {
   const [entireData, setEntireData] = useState([]);
   const navigate = useNavigate();
   const [pushUps, setPushUps] = useState([]);
   const [pullUps, setPullUps] = useState([]);
 
-  
-  const handlePush = () => {
-    navigate("/challenge1");
-};
-
-const handleClickPullUps = () => {
-  navigate("/challenge2");
-};
-
+  // Fetch user data and challenges on component mount
   useEffect(() => {
-  const getTheData = async() => {
-          const response = await fetch("http://localhost:30049/userlist");
-          if (!response.ok) {
-            throw new error(`Http error:${response.status}`)
-          } 
-          const data = await response.json()
-          const filteredData = data.filter(item => item.challenges[0].name === "pushUps");
-          const filteredData2 = data.filter(item => item.challenges[0].name === "pullUps");
-          console.log(data);
-          setPushUps(filteredData);
-          setPullUps(filteredData2);
-          setEntireData(data);
-          console.log(filteredData);
-          console.log(filteredData2);
+    const getTheData = async () => {
+      try {
+        const response = await fetch("http://localhost:30049/userlist"); // Ensure the endpoint is correct
+        if (!response.ok) {
+          throw new Error(`HTTP error: ${response.status}`);
         }
-        getTheData()
-  }, [])
+        const data = await response.json();
+        const filteredPushUps = data.filter(item => item.challenges[0].name === "pushUps");
+        const filteredPullUps = data.filter(item => item.challenges[0].name === "pullUps");
+        setPushUps(filteredPushUps);
+        setPullUps(filteredPullUps);
+        setEntireData(data);
+      } catch (error) {
+        console.error("Failed to fetch data:", error);
+      }
+    };
+    getTheData();
+  }, []);
+
+  // Navigate to different pages
+  const handlePush = () => navigate("/challenge1");
+  const handleClickPullUps = () => navigate("/challenge2");
+
   return (
-      <div className="galileodesign-container">
-        <Helmet>
-          <title>exported project</title>
-        </Helmet>
+    <div className="galileodesign-container">
+      <Helmet>
+        <title>Dashboard</title>
+      </Helmet>
+
+      {/* ChatBot Component Integration */}
+     
         { entireData.length > 0 && (
         <div className="galileodesign-galileodesign">
           <div className="galileodesign-depth0-frame0">
@@ -224,6 +223,9 @@ const handleClickPullUps = () => {
                       </div>
                     </div>
                   </button>
+                  <div className="chatbot-container">
+                    <ChatBot />
+                  </div>
                 </div>
               </div>
             </div>

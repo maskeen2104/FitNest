@@ -1,39 +1,52 @@
-# from flask import Flask, request, jsonify
-# import products
-# import pandas as pd
-# import openai
-
-# import requests
-# import products
-# import cohere
-
-# COHERE_KEY = "kgHhAG7T02t1NRsjPK9TefcBitztWTn4KfrC7Jw4"
-# co = cohere.Client(COHERE_KEY)
-
-# def generate_text(prompt, temp=0):
-#     response = co.chat(
-#         message=prompt,
-#         temperature=temp,
-#         stream=True)
-
-#     generated_text = []
-
-#     for event in response:
-#         if event.event_type == "text-generation":
-#             generated_text.append(event.text)
-#     return ''.join(generated_text)
-
-import cohere
 import pandas as pd
 from products import df_filtered  # Import the filtered DataFrame from products.py
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 
 # Initialize Cohere client
 COHERE_KEY = "kgHhAG7T02t1NRsjPK9TefcBitztWTn4KfrC7Jw4"  # Use your Cohere API key
 co = cohere.Client(COHERE_KEY)
 
+
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+
+@app.route('/recommend', methods=['POST'])
+@cross_origin(origin='http://localhost:5173', headers=['Content-Type', 'Authorization'])
+def recommend():
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,POST')
+
+    # Get user input from request body
+    user_input = request.json.get('user_input', '')
+    
+    # Generate text using Cohere AI
+    user_description = generate_text(user_input)
+    
+    # Get product recommendations based on user description
+    recommended_product = get_product_recommendations(user_description)
+
+    # Prepare response
+    if recommended_product is not None:
+        response = {
+            "message": "Recommended Product",
+            "product_title": recommended_product['title'],
+            "product_id": recommended_product['pid'],
+            "product_price": recommended_product['price_ca']
+        }
+    else:
+        response = {
+            "message": "Sorry, no product found."
+        }
+    
+    return jsonify(response)
+
+@app.route('/generate', methods=['GET'])
 def generate_text(prompt, temp=0.5):
     response = co.generate(
         model='command-light-nightly',  # Ensure this is a valid model for your Cohere account
@@ -55,6 +68,8 @@ def generate_text(prompt, temp=0.5):
         return generated_text
     else:
         return "No generation produced."
+
+
 
 def get_product_recommendations(user_description):
     # Combine user description with product descriptions
@@ -159,3 +174,6 @@ else:
 
 # if __name__ == '__main__':
 #     app.run(debug=True)
+
+if __name__ == '__main__':
+    app.run(debug=True)

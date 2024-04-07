@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
-import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 export const Login = () => {
   return (
@@ -12,7 +12,7 @@ export const Login = () => {
               <div className="depth-frame-3">
                 <div className="div-wrapper">
                   <div className="depth-frame-4">
-                    <img className="vector" alt="Vector" src="vector-1.svg" />
+                    <img className="vector" alt="Vector" src="vector-0.svg" />
                     <div className="depth-frame-5">
                       <div className="depth-frame-6" />
                       <div className="depth-frame-7" />
@@ -21,7 +21,7 @@ export const Login = () => {
                 </div>
                 <div className="depth-frame-8">
                   <div className="depth-frame-9">
-                    <div className="text-wrapper">Mindful</div>
+                    <div className="text-wrapper-brand">FitNest</div>
                   </div>
                 </div>
               </div>
@@ -34,31 +34,41 @@ export const Login = () => {
             <div className="depth-frame-13">
               <div className="depth-frame-14">
                 <div className="depth-frame-15">
-                  <div className="text-wrapper-2">Welcome to Mindful</div>
+                  <div className="text-wrapper-wlc">Welcome to FitNest</div>
                 </div>
               </div>
               <div className="depth-frame-16">
                 <div className="depth-frame-17">
                   <div className="depth-frame-18">
                     <div className="depth-frame-19">
-                      <div className="username-text-box">
-                        <div className="depth-frame-21">
-                          <div className="depth-frame-9">
-                            <input type = 'text' placeholder="Username" required={true}/>
-                          </div>
+                      <div className="depth-frame-21">
+                        <div className="depth-frame-9">
+                          <input
+                            type="text"
+                            placeholder="Username"
+                            required={true}
+                            class="username-text-box"
+                            id = 'username'
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
               </div>
               <div className="depth-frame-16">
                 <div className="depth-frame-22">
                   <div className="depth-frame-18">
                     <div className="depth-frame-19">
-                      <div className="depth-frame-23">
-                        <div className="depth-frame-24">
-                          <input type = 'text' placeholder="Password" required={true}/>
+                      <div className="depth-frame-24">
+                        <div className="depth-frame-9">
+                          <input
+                            type="text"
+                            placeholder="Password"
+                            required={true}
+                            class="username-text-box"
+                            id = "password"
+                          />
                         </div>
                       </div>
                     </div>
@@ -66,31 +76,21 @@ export const Login = () => {
                 </div>
               </div>
               <div className="depth-frame-30">
-                <div className="depth-frame-31">
+                <div className="sign-in-button">
                   <div className="depth-frame-32">
                     <div className="depth-frame-9">
-                      <div className="text-wrapper-6">Sign in</div>
+                      <div className="text-wrapper-sign" onClick={()=> {useNavigate('./Dashboard')}}>Sign in</div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="depth-frame-33">
-                <div className="depth-frame-15">
-                  <div className="text-wrapper-7">Don&#39;t have an account?</div>
                 </div>
               </div>
               <div className="depth-frame-30">
-                <div className="depth-frame-34">
+                <div className="depth-frame-register-button">
                   <div className="depth-frame-35">
                     <div className="depth-frame-9">
-                      <div className="text-wrapper-8">Create an account</div>
+                      <div className="text-wrapper-reg" onClick={()=> {useNavigate('./Register')}}>Create an account</div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="depth-frame-33">
-                <div className="depth-frame-15">
-                  <div className="text-wrapper-7">Forgot your password?</div>
                 </div>
               </div>
             </div>

@@ -258,6 +258,13 @@ const Dashboard = (props) => {
                         </span>
                       </div>
                     </button>
+                    <button className="galileodesign-pointbutton" onClick={()=> navigate("/explore")}>
+                      <div className="galileodesign-depth6-frame003">
+                        <span className="galileodesign-text04">
+                          <span>Explore</span>
+                        </span>
+                      </div>
+                    </button>
                     <button className="galileodesign-pointbutton">
                       <div className="galileodesign-depth6-frame003">
                         <span className="galileodesign-text04">
@@ -265,6 +272,7 @@ const Dashboard = (props) => {
                         </span>
                       </div>
                     </button>
+                    <img src="/src/images/pf.jpeg" alt="Profile" className="profile-img" />
                   </div>
                   <div className="galileodesign-depth4-frame2"></div>
                 </div>

@@ -3,6 +3,10 @@
   --light-gray: rgba(229, 232, 235, 1);
   --soft-green: rgba(110, 187, 117, 1);
   --white: rgba(255, 255, 255, 1);
+  --variable-collection-dark-green: rgba(43, 67, 47, 1);
+  --variable-collection-light-gray: rgba(229, 232, 235, 1);
+  --variable-collection-soft-green: rgba(110, 187, 117, 1);
+  --variable-collection-white: rgba(255, 255, 255, 1);
 }
 
 .landing-page-container {

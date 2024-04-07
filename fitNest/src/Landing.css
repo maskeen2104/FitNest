@@ -7,7 +7,41 @@
   --variable-collection-light-gray: rgba(229, 232, 235, 1);
   --variable-collection-soft-green: rgba(110, 187, 117, 1);
   --variable-collection-white: rgba(255, 255, 255, 1);
+  --black: rgba(0,0,0,1);
+  --main-blue: rgba(5, 17, 32, 1);
 }
+
+
+
+
+.fitnest-heading {
+  position: absolute;
+  bottom: 100px; /* Adjust these values as needed */
+  left: 150px;
+  margin-left: 20px; /* Add some space from the edge */
+  margin-top: 20px;
+  font-size: 100px; /* Adjust size as needed */
+}
+
+.para {
+  position: absolute;
+  bottom: 150px; /* Adjust these values as needed */
+  left: 150px;
+  margin-left: 20px; /* Add some space from the edge */
+  margin-top: 20px;
+}
+
+.intro-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
 
 .landing-page-container {
   display: flex;
@@ -17,126 +51,39 @@
   width: 100%;
   overflow: auto;
   height: auto;
-}
-
-.challenges-section {
-  width: 100%;
-  max-width: 1280px; /* Limiting max width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: auto;
-  height: auto;
-}
-
-.galileodesign-depth2-frame0 {
-  margin-left: 100px;
-}
-
-.galileodesign-depth3-frame1 {
-  margin-left: 300px;
-}
-
-.feature-image {
-  max-width: 100%;
-  border-radius: 20px 20px 20px 44px;
-  height: 600px !important;
-  margin-top: 70px;
-}
-
-.intro-text h1 {
-  font-size: 48px;
-  color: var(--dark-green);
-  text-align: center;
-}
-
-.intro-text p {
-  font-size: 16px;
-  color: var(--dark-green);
-  text-align: center;
-  margin: 20px 0;
-}
-
-.center {
-  margin: auto;
-  width: 20%;
-}
-
-/* .start-journey-button {
-  background-color: var(--soft-green);
-  color: var(--white);
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-size: 16px;
-  cursor: pointer;
-} */
-
-.challenges-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  width: 100%;
-  padding-top: 40px;
-}
-
-.challenge {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.challenge-image {
-  width: 100%;
-  max-width: 150px; /* Set a max-width for images */
-  border-radius: 12px;
-}
-
-.challenge-title {
-  margin-top: 10px;
-  font-size: 16px;
-  color: var(--dark-green);
-  text-align: center;
-}
-
-.test {
-  height: 10000px;
-  background-color: blue;
+  background-color: rgba(5, 17, 32, 1)
 }
 
 .content-section {
   position: relative;
   width: 100%;
-  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-}
-
-.image-overlay {
-  position: relative;
 }
 
 .feature-image {
   width: 100%;
-  display: block; /* Remove default image margins */
-  max-width: 100%;
-  height: 75%; /* Keep image aspect ratio */
+  display: block; 
+  border-radius: 100px;
+  height: 75vh; 
+  padding: 10vh;
 }
 
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%); /* Center the overlay */
+.intro-text {
+  position: absolute; 
   color: var(--white);
   text-align: center;
-  width: 100%; /* Adjust based on your design preference */
-  padding: 20px; /* Padding for text */
-  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent overlay */
+  width: 100%; 
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.overlay-text h1 {
-  top: 40%;
-}
+
+
 .start-journey-button {
   background-color: var(--soft-green);
   color: var(--white);
@@ -144,5 +91,57 @@
   border-radius: 12px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px; /* Space above the button */
+  margin-top: 20px;
 }
+
+
+
+.challenges-section {
+  display: grid;
+  padding-left: 400px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 250px;
+  width: 100%;
+  /* padding-top: 40px; */
+}
+
+.challenge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Ensures everything in the challenge is centered */
+}
+
+.challenge-image {
+  width: 200%; /* Increased width */
+  max-width: 1050px; /* Adjust max width as needed */
+  border-radius: 12px;
+  margin: auto; /* Center the image within its container */
+}
+
+
+.challenge-title {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--soft-green);
+  text-align: center;
+}
+
+
+.h2 {
+  color: var(--soft-green); 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.challenge-button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+

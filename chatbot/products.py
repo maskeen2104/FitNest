@@ -1,6 +1,6 @@
 import pandas as pd
 
-csv_file_path = 'chatbot/products.csv'
+csv_file_path = '/Users/maskeenkaur/FitNest/chatbot/products.csv'
 df = pd.read_csv(csv_file_path)
 
 print("Original DataFrame:")

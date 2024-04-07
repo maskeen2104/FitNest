@@ -52,7 +52,7 @@ def file_upload():
     
 @app.route("/pullup", methods = ["GET", "POST"])
 def file_upload2():
-    uploads_dir = "/Users/maskeenkaur/FitNest/model/uploads_dir"
+    uploads_dir = "/Users/rythemshah/FitNest/model/uploads_dir"
     if request.method == "POST":
         if 'file' not in request.files:
             return "No file part in the request", 400

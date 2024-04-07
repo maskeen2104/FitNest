@@ -82,14 +82,14 @@ const Dashboard = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="galileodesign-depth4-frame21">
+                <button className="galileodesign-depth4-frame21">
                   <div className="galileodesign-depth5-frame004">
                     <div className="galileodesign-depth6-frame007"></div>
                     <div className="galileodesign-depth6-frame2">
                       <div className="galileodesign-depth7-frame001">
                         <div className="galileodesign-depth8-frame0">
                           <span className="galileodesign-text12">
-                            <span>Run 20 miles this month</span>
+                            <span>Do 5 push ups today</span>
                           </span>
                         </div>
                       </div>
@@ -106,21 +106,14 @@ const Dashboard = (props) => {
                     <div className="galileodesign-depth6-frame008">
                       <div className="galileodesign-depth7-frame002">
                         <img
-                          src="/external/depth8frame06258-9sfd.svg"
+                          src= {"/src/images/push-up-icon.jpg"}
                           alt="Depth8Frame06258"
-                          className="galileodesign-depth8-frame002"
-                        />
+                          className="galileodesign-depth8-frame002"></img>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="galileodesign-depth4-frame3">
-                  <div className="galileodesign-depth5-frame005">
-                    <div className="galileodesign-depth6-frame009"></div>
-                    <div className="galileodesign-depth6-frame1"></div>
-                  </div>
-                </div>
-                <div className="galileodesign-depth4-frame4">
+                </button>
+                <button className="galileodesign-depth4-frame4">
                   <div className="galileodesign-depth5-frame006">
                     <div className="galileodesign-depth6-frame010"></div>
                     <div className="galileodesign-depth6-frame21">
@@ -128,7 +121,7 @@ const Dashboard = (props) => {
                         <div className="galileodesign-depth8-frame003">
                           <span className="galileodesign-text16">
                             <span>
-                              Eat 2 servings of vegetables per day (1 week left)
+                               Do 4 pull ups today
                             </span>
                           </span>
                         </div>
@@ -146,20 +139,14 @@ const Dashboard = (props) => {
                     <div className="galileodesign-depth6-frame011">
                       <div className="galileodesign-depth7-frame004">
                         <img
-                          src="/external/depth8frame06260-0l88.svg"
+                          src={"/src/images/pull-up-icon.jpg"}
                           alt="Depth8Frame06260"
                           className="galileodesign-depth8-frame005"
                         />
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="galileodesign-depth4-frame5">
-                  <div className="galileodesign-depth5-frame007">
-                    <div className="galileodesign-depth6-frame012"></div>
-                    <div className="galileodesign-depth6-frame11"></div>
-                  </div>
-                </div>
+                </button>
                 <div className="galileodesign-depth4-frame6">
                   <div className="galileodesign-depth5-frame008">
                     <div className="galileodesign-depth6-frame013">

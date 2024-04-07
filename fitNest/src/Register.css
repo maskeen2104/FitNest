@@ -15,28 +15,29 @@ body {
 }
 
 .container {
-    align-items: flex-start;
+    align-items: center;
     background-color: var(--White, #fff);
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     height: 800px;
-    width: 1800px;
+    width: 100%;
+    align-items: stretch;
 }
 
 .header {
     background-color: var(--White, #fff);
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     border-bottom: 1px solid rgba(229, 232, 235, 1);
     padding: 12px 40px;
     font-weight: 700;
-    height: 800px;
+    height: 10%;  
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 100%) {
     .header {
         flex-wrap: wrap;
         padding: 0 20px;
@@ -65,9 +66,14 @@ body {
 }
 
 .logo-text {
-    font-family: Lexend, sans-serif;
-    font-feature-settings: "dlig" on;
-    margin: 0;
+    font-family: "Lexend-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.27px;
+    line-height: 22.5px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
 }
 .div {
     align-items: flex-start;
@@ -75,7 +81,7 @@ body {
     flex-direction: column;
     height: 800px;
     position: relative;
-    width: 1800px;
+    width: 100%;
 }
 
 .login-button {
@@ -89,6 +95,7 @@ body {
     color: #0f240f;
     letter-spacing: 0.21px;
     line-height: 150%;
+    font-weight: bold;  
 }
 
 .login-text {
@@ -100,7 +107,7 @@ body {
     align-self: center;
     width: 512px;
     max-width: 100%;
-    padding: 20px 16px;
+    padding: 30px 16px;
     font-size: 16px;
     color: var(--Dark-Green, #2b432f);
     font-weight: 500;
@@ -113,6 +120,7 @@ body {
     letter-spacing: -0.7px;
     margin: 0;
     font-feature-settings: "dlig" on;
+    align-content: center;
 }
 
 @media (max-width: 991px) {

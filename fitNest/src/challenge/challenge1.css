@@ -1,0 +1,138 @@
+.container {
+    background-color: #fff;
+    justify-content: center;
+  }
+
+  .challenge-info {
+    align-items: center;
+    background-color: #121a21;
+    width: 100%;
+    padding: 70px 80px;
+  }
+
+  @media (max-width: 991px) {
+    .challenge-info {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  
+
+  .title {
+    color: #fff;
+    text-align: center;
+    font-feature-settings: "dlig" on;
+    letter-spacing: -0.33px;
+    font: 700 22px Lexend, sans-serif;
+  }
+
+  .description {
+    color: #fff;
+    text-align: center;
+    font-feature-settings: "dlig" on;
+    margin-top: 16px;
+    font: 400 16px/150% Lexend, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .description {
+      max-width: 100%;
+    }
+  }
+
+  .progress-info {
+    display: flex;
+    margin-top: 36px;
+    width: 512px;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .progress-details {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    line-height: 150%;
+  }
+
+  @media (max-width: 991px) {
+    .progress-details {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .completed-days {
+    font-feature-settings: "dlig" on;
+    font: 500 16px Lexend, sans-serif;
+  }
+
+  .progress-percentage {
+    font-feature-settings: "dlig" on;
+    font: 400 14px Lexend, sans-serif;
+  }
+
+  .progress-bar {
+    align-items: start;
+    border-radius: 4px;
+    background-color: #334a66;
+    display: flex;
+    margin-top: 12px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (max-width: 991px) {
+    .progress-bar {
+      max-width: 100%;
+      padding-right: 20px;
+    }
+  }
+
+  .progress {
+    border-radius: 4px;
+    background-color: #1a78e5;
+    height: 8px;
+  }
+
+  .button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    width: 480px;
+    max-width: 100%;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.21px;
+    line-height: 150%;
+    padding: 10px 16px;
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .button {
+      padding: 0 20px;
+    }
+  }
+
+  .start-button {
+    background-color: #1a78e5;
+    margin-top: 12px;
+  }
+
+  .not-now-button {
+    background-color: #243347;
+    margin: 12px 0 285px;
+  }
+
+  @media (max-width: 991px) {
+    .not-now-button {
+      margin-bottom: 40px;
+    }
+  }

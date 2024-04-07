@@ -195,7 +195,7 @@ const Body = ({ navigate }) => {
         <div className="image-overlay">
           <img src="/src/images/gym.jpg" alt="Gym" className="feature-image"/>
           <div className="overlay-text">
-            <h1>Discover the benefits of Vitality</h1>
+            <h1>FitNest</h1>
             <p>Unlock your potential with a personalized wellness journey. Get started with a challenge or explore the app to find what works best for you.</p>
             <button className="start-journey-button" onClick={() => navigate("/login")}>Start your journey</button>
           </div>

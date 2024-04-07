@@ -113,7 +113,7 @@
     height: 40px;
     display: flex;
     align-items: center;
-    flex-shrink: 0;
+    justify-content: flex-end
   }
   .galileodesign-depth5-frame4 {
     width: 42.703125px;
@@ -123,10 +123,8 @@
     flex-shrink: 0;
     flex-direction: column;
   }
-  .galileodesign-depth5-frame001 {
-    width: 40;
+  .galileodesign-homebutton {
     background-color: white;
-    height: 30px;
     display: flex;
     align-items: flex-start;
     flex-shrink: 0;
@@ -151,9 +149,8 @@
     font-stretch: normal;
     text-decoration: none;
   }
-  .galileodesign-depth5-frame11 {
-    width: 49.28125px;
-    height: 21px;
+  .galileodesign-pointbutton {
+    background-color: white;
     display: flex;
     align-items: flex-start;
     flex-shrink: 0;
@@ -298,7 +295,7 @@
     display: flex;
     align-self: stretch;
     align-items: flex-start;
-    flex-direction: column;
+    
   }
   .galileodesign-text10 {
     color: rgba(15, 25, 15, 1);
@@ -311,7 +308,7 @@
     font-stretch: normal;
     text-decoration: none;
     margin-right: -0.86px;
-    margin-top: -20px;
+    
   }
   .galileodesign-depth4-frame21 {
     gap: 16px;
@@ -333,7 +330,6 @@
     display: flex;
     position: absolute;
     align-items: center;
-    flex-shrink: 0;
   }
   .galileodesign-depth6-frame007 {
     width: 99.546875px;

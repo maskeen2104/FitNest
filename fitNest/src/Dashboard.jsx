@@ -18,11 +18,9 @@ const Dashboard = (props) => {
               <div className="galileodesign-depth3-frame0">
                 <div className="galileodesign-depth4-frame0">
                   <div className="galileodesign-depth5-frame0">
-                    <img
-                      src="/external/depth6frame06252-cxs1.svg"
-                      alt="Depth6Frame06252"
-                      className="galileodesign-depth6-frame0"
-                    />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3798a9d0b87570754db1150e552bd05cfe9bd70eadfc7764a0f07862ac781ae?apiKey=6dc1b1172a21495ea8a406717dc53c8f&"
+                   alt="Depth6Frame06252"
+                   className="galileodesign-depth6-frame0"/>
                   </div>
                   <div className="galileodesign-depth5-frame1">
                     <div className="galileodesign-depth6-frame001">
@@ -35,20 +33,20 @@ const Dashboard = (props) => {
               </div>
               <div className="galileodesign-depth3-frame1">
                 <div className="galileodesign-depth4-frame01">
-                  <button className="galileodesign-depth5-frame001"onClick={()=> navigate("/dashboard")}>
+                  <button className="galileodesign-homebutton"onClick={()=> navigate("/dashboard")}>
                     <div className="galileodesign-depth6-frame002">
                       <span className="galileodesign-text02">
                         <span >Home</span>
                       </span>
                     </div>
                   </button>
-                  <div className="galileodesign-depth5-frame11">
+                  <button className="galileodesign-pointbutton">
                     <div className="galileodesign-depth6-frame003">
                       <span className="galileodesign-text04">
                         <span>Points</span>
                       </span>
                     </div>
-                  </div>
+                  </button>
                 </div>
                 <div className="galileodesign-depth4-frame2"></div>
               </div>

@@ -200,7 +200,9 @@ const Body = ({ navigate }) => {
         <div className="intro-text">
           <h1>Discover the benefits of Vitality</h1>
           <p>Unlock your potential with a personalized wellness journey. Get started with a challenge or explore the app to find what works best for you.</p>
-          <button className="start-journey-button" onClick={() => navigate("/login")}>Start your journey</button>
+          <div className='center'>
+            <button className="start-journey-button" onClick={() => navigate("/login")}>Start your journey</button>
+          </div>
         </div>
       </section>
       <section className="challenges-section">
@@ -219,8 +221,8 @@ const Body = ({ navigate }) => {
 
 // Example data for challenges, adjust as needed
 const challengeData = [
-  { image: "/src/images/meditation.png", title: "Meditation Challenge" },
-  { image: "/src/images/yoga.png", title: "Yoga Challenge" },
+  { image: "/src/images/push-up-icon.jpg", title: "Push-up Challenge" },
+  { image: "/src/images/pull-up-icon.jpg", title: "Pull-up Challenge" },
   // Add more challenges as needed
 ];
 

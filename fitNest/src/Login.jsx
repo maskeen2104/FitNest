@@ -64,7 +64,7 @@ export const Login = () => {
                       <div className="depth-frame-24">
                         <div className="depth-frame-9">
                           <input
-                            type="text"
+                            type="password"
                             placeholder="Password"
                             required={true}
                             class="username-text-box"

@@ -4,10 +4,10 @@
     box-sizing: inherit;
 }
 
-html {
+.html {
     box-sizing: border-box;
-    /* overflow-y: hidden; */
-    /* overflow-x: hidden; */
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
 }
 
 body {

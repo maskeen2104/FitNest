@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './challenge1Video.css'
 import axios from 'axios'; // Import Axios for making HTTP requests
 import { useEffect } from 'react';
 
@@ -81,8 +82,8 @@ const AnotherPage = () => {
 
     return (
         <div className="anotherPageContainer">
-            <form onSubmit={handleSubmit}>
-                <div className="formGroup">
+            <form onSubmit={handleSubmit} className="uploadForm">
+                <div className="uploadFormGroup">
                     <label htmlFor="file">Upload a file</label>
                     <input
                         type="file"
@@ -104,7 +105,7 @@ const AnotherPage = () => {
                     )}
 
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" className="uploadFormButton">Submit</button>
             </form>
         </div>
     );

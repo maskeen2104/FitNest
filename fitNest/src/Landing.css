@@ -19,7 +19,7 @@
   height: auto;
 }
 
-.content-section, .challenges-section {
+.challenges-section {
   width: 100%;
   max-width: 1280px; /* Limiting max width */
   display: flex;
@@ -54,14 +54,14 @@
   width: 20%;
 }
 
-.start-journey-button {
+/* .start-journey-button {
   background-color: var(--soft-green);
   color: var(--white);
   padding: 10px 20px;
   border-radius: 12px;
   font-size: 16px;
   cursor: pointer;
-}
+} */
 
 .challenges-section {
   display: grid;
@@ -93,4 +93,44 @@
 .test {
   height: 10000px;
   background-color: blue;
+}
+
+.content-section {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.feature-image {
+  width: 100%;
+  display: block; /* Remove default image margins */
+  max-width: 100%;
+  height: auto; /* Keep image aspect ratio */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the overlay */
+  color: var(--white);
+  text-align: center;
+  width: 100%; /* Adjust based on your design preference */
+  padding: 20px; /* Padding for text */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.start-journey-button {
+  background-color: var(--soft-green);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Space above the button */
 }

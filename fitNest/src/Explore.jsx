@@ -64,40 +64,40 @@ function Explore() {
             />
             <div className="logo-text">FitNest</div>
           </div>
-          <div className="button-header">
+          {/* <div className="button-header"> */}
           <button
             className="hbutton"
             onClick={() => navigate("/dashboard")}
           >
             <div className="galileodesign-depth6-frame002">
-              <span className="galileodesign-text02">
+              <span className="button-text -text02">
                 <span>Home</span>
               </span>
             </div>
           </button>
           <button
-            className="galileodesign-pointbutton"
+            className="hbutton"
             onClick={() => navigate("/explore")}
           >
             <div className="galileodesign-depth6-frame003">
-              <span className="galileodesign-text04">
+              <span className="button-text ">
                 <span>Explore</span>
               </span>
             </div>
           </button>
-          <button className="galileodesign-pointbutton">
+          <button className="hbutton">
             <div className="galileodesign-depth6-frame003">
               <img
                 src="/src/images/coin.png"
                 alt="Coin"
                 className="coin-icon"
               />
-              <span className="galileodesign-text04">
-                <span>Points</span>
+              <span className="button-text ">
+                <span>10</span>
               </span>
             </div>
           </button>
-          </div>
+          {/* </div> */}
         </header>
         <main className="main-content">
           <section className="hero-section">

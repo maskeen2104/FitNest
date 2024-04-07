@@ -2,40 +2,65 @@ import React, { useState } from 'react';
 import './challenge1Video.css'
 import axios from 'axios'; // Import Axios for making HTTP requests
 import { useEffect } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const AnotherPage = () => {
     const [formData, setFormData] = useState({});
     const [pushups, setpushups] = useState(0);
     const [loading, setLoading] = useState(true);
     const [dataAdded, setDataAdded] = useState({});
+    const [testPassed, setTestPassed] = useState(false);
+    const [showCongratsMessage, setShowCongratsMessage] = useState(false); // State variable for showing the congrats message
+    const navigate = useNavigate();
+
     const handleFileChange = (e) => {
         setFormData({ file: e.target.files[0] });
     };
 
-    // const handleFileChange3 = async (id, pushups) => {
-    //     const pushUpsToDo = pushups + 4; // The new value you want to set for pushUpsToDo
-    
-    //     try {
-    //         const response = await fetch(`http://localhost:30049/userChallenge/${id}`, {
-    //             method: 'PUT', // or 'PATCH' if you're partially updating the resource
-    //             headers: {
-    //                 'Content-Type': 'application/json',
-    //             },
-    //             body: JSON.stringify({
-    //                 pushUpsToDo: pushUpsToDo, // This assumes the field you're updating is called `pushUpsToDo`
-    //             }),
-    //         });
-    
-    //         if (!response.ok) {
-    //             throw new Error('Network response was not ok');
-    //         }
-    
-    //         const responseData = await response.json();
-    //         console.log('Success:', responseData);
-    //     } catch (error) {
-    //         console.error('Error:', error);
-    //     }
-    // };
+    useEffect(() => {
+        if (testPassed) {
+            handleFileChange3();
+        }
+    }, []);
+
+
+    const handleFileChange3 = async (id, pushups) => {
+        if (testPassed) {
+            const pushUpsToDo = Number(pushups) + 4;
+        
+            try {
+                const response = await fetch(`http://localhost:30049/users/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        challenges: [
+                            {
+                                completed: true,
+                                pushUpsToDo: pushUpsToDo
+                            }
+                        ]
+                    }),
+                });
+        
+                if (!response.ok) {
+                    throw new Error('Failed to update challenges data');
+                }
+        
+                const responseData = await response.json();
+                console.log('Success:', responseData);
+                setShowCongratsMessage(true); // Update state to show the congrats message
+            } catch (error) {
+                console.error('Error:', error);
+            } navigate("/challenge1", { state: { message: "Congrats, you have passed" } })
+            window.location.reload()
+        }   
+        navigate("/challenge1", { state: { message: "Sorry, you will come back stronger" } })
+            window.location.reload()
+    };
+        
+
     
 
     useEffect(() => {
@@ -91,19 +116,33 @@ const AnotherPage = () => {
                         name="file"
                         onChange={handleFileChange}
                     />
+
+                    <div>
+                    {showCongratsMessage && (
+                        <p className="description2" style={{ fontSize: "40px", marginLeft: "40%" }}>
+                            Congrats u have passed
+                        </p>
+                    )}
+                       </div>
                     {pushups > 0 && dataAdded.length > 0 && (
                         dataAdded[0].challenges[0].pushUpsToDo <= pushups ? (
                             <p className="description2" style={{ fontSize: "40px", marginLeft: "40%" }}>
-                                Congrats u passed the test
-                                {/* handleFileChange3(dataAdded[0].id, dataAdded[0].challenges[0].pushUpsToDo); */}
+                                {setTestPassed(true)};
+                                {handleFileChange3(dataAdded[0].user_id, dataAdded[0].challenges[0].pushUpsToDo)};
+                                <p className="description2" style={{ fontSize: "40px", marginLeft: "40%" }}>
+                                    Congrats u have passed
+                                </p>
                             </p>
                         ) : (
                             <p className="description2" style={{ fontSize: "20px", marginLeft: "40%"  }}>
-                                u failed the test
+                                {setTestPassed(false)};
+                                {/* {alert("u will come back stronger")}; */}
+                                {handleFileChange3(dataAdded[0].user_id, dataAdded[0].challenges[0].pushUpsToDo)};
+
                             </p>
                         )
-                    )}
-
+                    )} 
+                    
                 </div>
                 <button type="submit" className="uploadFormButton">Submit</button>
             </form>

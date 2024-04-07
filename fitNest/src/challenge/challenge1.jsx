@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 import "./challenge1.css";
 
 const PushUps = () => {
+  const location = useLocation();
   const [dataAdded, setEntireData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const message = location.state ? location.state.message : null;
+
 
 
   const handleSubmit = () => {
@@ -53,6 +57,17 @@ const PushUps = () => {
     <div className="container">
       <section className="challenge-info">
         <h1 className="title" style = {{ fontSize: "30px", marginLeft: "-20px"}}>Push up challenge </h1>
+        {message && message === "Sorry, you will come back stronger" ? (
+            <div className="Message" style={{ color: "red", marginLeft: "40%", marginTop: "90px", fontSize: "20px" }}>
+                {message && <p>{message}</p>}
+                {console.log(message)}
+            </div>
+        ) : (
+            <div className="Message" style={{ color: "green", marginLeft: "40%", marginTop: "90px" }}>
+                {message && <p>{message}</p>}
+                {console.log(message)}
+            </div>
+        )}
         {dataAdded.length > 0 && (
           <p className="description" style = {{ fontSize: "20px"}}>
             Do {dataAdded[0].challenges[0].pushUpsToDo} push-ups every day for 30 days. Track your progress and see

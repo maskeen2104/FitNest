@@ -7,10 +7,10 @@
 }
 
 .signup-button {
-  display: block; /* Ensures full width usage */
-  width: 80%; /* Adjust based on your design preference */
-  max-width: 480px; /* Ensures buttons don’t stretch too wide on larger screens */
-  margin: 5px auto; /* Reduced margin for closer buttons */
+  display: block; / Ensures full width usage /
+  width: 80%; / Adjust based on your design preference /
+  max-width: 480px; / Ensures buttons don’t stretch too wide on larger screens /
+  margin: 5px auto; / Reduced margin for closer buttons /
   padding: 12px 20px;
   font-size: 16px;
   border-radius: 12px;
@@ -22,10 +22,10 @@
 }
 
 
-/* Ensuring responsiveness */
+/ Ensuring responsiveness /
 @media (max-width: 991px) {
   .signup-button {
-    width: calc(100% - 1px); /* Adjust width to ensure padding within the container */
+    width: calc(100% - 1px); / Adjust width to ensure padding within the container /
   }
 }
 
@@ -39,7 +39,7 @@
   font-weight: 500;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Ensures that children, including .signup-title, are centered */
+  align-items: center; / Ensures that children, including .signup-title, are centered /
 }
 
 .signup-title {
@@ -49,7 +49,6 @@
   letter-spacing: -0.7px;
   margin: 0;
   font-feature-settings: "dlig" on;
-  text-align: center; /* Explicitly center the text */
-  width: 100%; /* Ensures the text-align center has an effect */
+  text-align: center; / Explicitly center the text /
+  width: 100%; / Ensures the text-align center has an effect */
 }
-

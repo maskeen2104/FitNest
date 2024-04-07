@@ -84,6 +84,7 @@ const handleClickPullUps = () => {
                     </button>
                     <button className="galileodesign-pointbutton">
                       <div className="galileodesign-depth6-frame003">
+                        <img src="/src/images/coin.png" alt="Coin" className="coin-icon" />
                         <span className="galileodesign-text04">
                           <span>2</span>
                         </span>

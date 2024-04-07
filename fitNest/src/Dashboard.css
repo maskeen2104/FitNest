@@ -160,7 +160,7 @@
   display: flex;
   align-self: stretch;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
 }
 .galileodesign-text04 {
   color: rgba(15, 25, 15, 1);
@@ -1163,4 +1163,11 @@
   border-radius: 50%; /* Creates a circular profile image */
   object-fit: cover; /* Ensures the image covers the space without stretching */
   border: 2px solid #fff; /* Optional: adds a white border around the image */
+}
+
+.coin-icon {
+  width: 20px; /* Adjust based on your preference */
+  height: 20px; /* Adjust based on your preference */
+  object-fit: cover;
+  margin-right: 5px; /* Adjust the spacing between the icon and the number */
 }

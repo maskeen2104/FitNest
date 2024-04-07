@@ -1,121 +1,50 @@
-.register {
-    align-items: flex-start;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
     background-color: #ffffff;
-    display: inline-flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  .register .depth-frame {
+}
+
+.container {
     align-items: flex-start;
-    background-color: var(--variable-collection-white);
+    background-color: var(--White, #fff);
     display: flex;
     flex-direction: column;
-    height: 997px;
+    justify-content: center;
     position: relative;
-    width: 1280px;
-  }
-  
-  .register .div {
-    align-items: flex-start;
+}
+
+.header {
+    background-color: var(--White, #fff);
     display: flex;
-    flex-direction: column;
-    height: 997px;
-    position: relative;
-    width: 1280px;
-  }
-  
-  .register .depth-frame-2 {
-    align-items: center;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: #e5e8ea;
-    display: flex;
-    height: 65px;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(229, 232, 235, 1);
     padding: 12px 40px;
-    position: relative;
-    width: 1280px;
-  }
-  
-  .register .depth-frame-wrapper {
-    align-items: center;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+}
+
+.logo-container {
     display: flex;
-    gap: 32px;
-    height: 22.5px;
-    position: relative;
-    width: 108.58px;
-  }
-  
-  .register .depth-frame-3 {
     align-items: center;
-    display: flex;
     gap: 16px;
-    height: 22.5px;
-    position: relative;
-    width: 108.58px;
-  }
-  
-  .register .div-wrapper {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 16px;
-    position: relative;
-    width: 16px;
-  }
-  
-  .register .overlap-group-wrapper {
-    height: 16px;
-    position: relative;
-    width: 16px;
-  }
-  
-  .register .overlap-group {
-    height: 13px;
-    left: 1px;
-    position: relative;
-    top: 1px;
-    width: 13px;
-  }
-  
-  .register .vector {
-    height: 9px;
-    left: 1px;
-    position: absolute;
-    top: 3px;
-    width: 12px;
-  }
-  
-  .register .img {
-    height: 13px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 13px;
-  }
-  
-  .register .depth-frame-4 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 22.5px;
-    position: relative;
-    width: 76.58px;
-  }
-  
-  .register .depth-frame-5 {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    margin-bottom: -0.5px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .register .text-wrapper {
+    letter-spacing: -0.27px;
     color: var(--variable-collection-dark-green);
     font-family: "Lexend-Bold", Helvetica;
     font-size: 18px;
@@ -126,324 +55,130 @@
     position: relative;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .register .depth-frame-6 {
-    align-items: flex-start;
+}
+
+.logo {
+    width: 16px;
+}
+
+.logo-text {
+    font-family: Lexend, sans-serif;
+    font-feature-settings: "dlig" on;
+    margin: 0;
+}
+
+.login-button {
     display: flex;
-    gap: 32px;
-    height: 40px;
-    justify-content: flex-end;
-    position: relative;
-    width: 1091.42px;
-  }
-  
-  .register .depth-frame-7 {
-    align-items: flex-start;
-    display: flex;
-    gap: 8px;
-    height: 40px;
-    position: relative;
-    width: 84px;
-  }
-  
-  .register .depth-frame-8 {
+    justify-content: center;
     align-items: center;
-    background-color: var(--variable-collection-soft-green);
+    background-color: var(--Soft-Green, #6ebb75);
     border-radius: 12px;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0px 16px;
-    position: relative;
-    width: 84px;
-  }
-  
-  .register .depth-frame-9 {
-    align-items: flex-start;
-    background-color: #00ff00;
-    display: flex;
-    flex-direction: column;
-    height: 21px;
-    position: relative;
-    width: 45.73px;
-  }
-  
-  .register .depth-frame-10 {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: var(--variable-collection-soft-green);
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  
-  .register .text-wrapper-2 {
-    color: #0f230f;
-    font-family: "Lexend-Bold", Helvetica;
+    padding: 10px 16px;
     font-size: 14px;
-    font-weight: 700;
+    color: #0f240f;
     letter-spacing: 0.21px;
-    line-height: 21px;
-    margin-right: -0.27px;
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .register .depth-frame-11 {
-    align-items: flex-start;
-    display: flex;
-    height: 895px;
-    justify-content: center;
-    padding: 20px 160px;
-    position: relative;
-    width: 1280px;
-  }
-  
-  .register .depth-frame-12 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 855px;
-    padding: 20px 0px;
-    position: relative;
+    line-height: 150%;
+}
+
+.login-text {
+    font-family: Lexend, sans-serif;
+    font-feature-settings: "dlig" on;
+}
+
+.signup-container {
+    align-self: center;
     width: 512px;
-  }
-  
-  .register .depth-frame-13 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 67px;
-    padding: 20px 16px 12px;
-    position: relative;
-    width: 512px;
-  }
-  
-  .register .depth-frame-14 {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  
-  .register .text-wrapper-3 {
-    color: var(--variable-collection-dark-green);
-    font-family: "Lexend-Bold", Helvetica;
+    max-width: 100%;
+    padding: 20px 16px;
+    font-size: 16px;
+    color: var(--Dark-Green, #2b432f);
+    font-weight: 500;
+}
+
+.signup-title {
+    font-family: Lexend, sans-serif;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: -0.7px;
-    line-height: 35px;
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .register .depth-frame-15 {
-    align-items: center;
-    display: flex;
-    height: 112px;
-    padding: 12px 16px;
-    position: relative;
-    width: 512px;
-  }
-  
-  .register .depth-frame-16 {
-    align-items: flex-end;
-    display: flex;
-    gap: 16px;
-    height: 88px;
-    position: relative;
-    width: 480px;
-  }
-  
-  .register .depth-frame-17 {
+    margin: 0;
+    font-feature-settings: "dlig" on;
+}
+
+@media (max-width: 991px) {
+    .signup-title {
+        max-width: 100%;
+    }
+}
+
+.form-group {
+    margin-top: 24px;
+}
+
+.form-label {
+    font-family: Lexend, sans-serif;
+    line-height: 150%;
+    font-feature-settings: "dlig" on;
+}
+
+.form-input {
     align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 88px;
-    position: relative;
-    width: 480px;
-  }
-  
-  .register .depth-frame-18 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 32px;
-    padding: 0px 0px 8px;
-    position: relative;
-    width: 480px;
-  }
-  
-  .register .text-wrapper-4 {
-    align-self: stretch;
+    border-style: solid;
+    background-color: var(--variable-collection-light-gray);
     color: var(--variable-collection-dark-green);
-    font-family: "Lexend-Medium", Helvetica;
+    font-family: "Lexend-Regular", Helvetica;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0;
     line-height: 24px;
-    margin-top: -1px;
-    position: relative;
-  }
-  
-  .register .depth-frame-19 {
-    align-items: center;
-    display: flex;
-    height: 56px;
-    position: relative;
-    width: 480px;
-  }
-  
-  .register .depth-frame-20 {
-    align-items: flex-start;
-    background-color: var(--variable-collection-light-gray);
+    margin-right: -0.86px;
+    margin-top: -20px;
+    white-space: nowrap;
     border-radius: 12px;
-    display: flex;
     height: 56px;
     justify-content: space-around;
     overflow: hidden;
     padding: 16px;
     position: relative;
     width: 480px;
-  }
-  
-  .register .depth-frame-21 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 24px;
-    position: relative;
-    width: 129.19px;
-  }
-  
-  .register .text-wrapper-5 {
+    margin-top: 8px;
+    font-feature-settings: "dlig" on;
+    border: none;
+}
+::placeholder {
     color: var(--variable-collection-dark-green);
     font-family: "Lexend-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0;
     line-height: 24px;
-    margin-right: -0.81px;
+    margin-right: -0.86px;
     margin-top: -1px;
-    position: relative;
     white-space: nowrap;
     width: fit-content;
   }
-  
-  .register .depth-frame-22 {
-    align-items: flex-start;
+
+.signup-button {
     display: flex;
-    flex-direction: column;
-    height: 24px;
-    position: relative;
-    width: 162.39px;
-  }
-  
-  .register .text-wrapper-6 {
-    color: var(--variable-collection-dark-green);
-    font-family: "Lexend-Regular", Helvetica;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 24px;
-    margin-right: -0.61px;
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .register .depth-frame-23 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 24px;
-    overflow: hidden;
-    position: relative;
-    width: 159.64px;
-  }
-  
-  .register .depth-frame-24 {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    margin-right: -0.36px;
-    position: relative;
-  }
-  
-  .register .text-wrapper-7 {
-    color: var(--variable-collection-dark-green);
-    font-family: "Lexend-Regular", Helvetica;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 24px;
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .register .depth-frame-25 {
-    align-items: flex-start;
-    display: flex;
-    height: 72px;
-    padding: 12px 16px;
-    position: relative;
-    width: 512px;
-  }
-  
-  .register .depth-frame-26 {
-    align-items: center;
-    background-color: var(--variable-collection-soft-green);
-    border-radius: 12px;
-    display: flex;
-    height: 48px;
     justify-content: center;
-    overflow: hidden;
-    padding: 0px 20px;
-    position: relative;
-    width: 480px;
-  }
-  
-  .register .depth-frame-27 {
-    align-items: flex-start;
-    background-color: var(--variable-collection-soft-green);
-    display: flex;
-    flex-direction: column;
-    height: 24px;
-    position: relative;
-    width: 63.8px;
-  }
-  
-  .register .text-wrapper-8 {
-    color: #0f230f;
-    font-family: "Lexend-Bold", Helvetica;
+    align-items: center;
+    background-color: var(--Soft-Green, #6ebb75);
+    color: #0f240f;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 24px 0 218px;
+    font-family: Lexend, sans-serif;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.24px;
-    line-height: 24px;
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .register .depth-frame-28 {
-    height: 37px;
-    position: relative;
-    width: 1280px;
-  }
-  
+    line-height: 150%;
+    cursor: pointer;
+    border: none;
+    font-feature-settings: "dlig" on;
+}
+
+@media (max-width: 991px) {
+    .signup-button {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+}

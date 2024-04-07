@@ -1,118 +1,75 @@
-import React from "react";
-import "./Register";
+import * as React from "react";
+import './Register.css'
 
-export const Register = () => {
+function Header() {
   return (
-    <div className="register">
-      <div className="depth-frame">
-        <div className="div">
-          <div className="depth-frame-2">
-            <div className="depth-frame-wrapper">
-              <div className="depth-frame-3">
-                <div className="div-wrapper">
-                  <div className="overlap-group-wrapper">
-                    <div className="overlap-group">
-                      <img className="vector" alt="Vector" src="vector-2.svg" />
-                      <img className="img" alt="Vector" src="vector-1.svg" />
-                    </div>
-                  </div>
-                </div>
-                <div className="depth-frame-4">
-                  <div className="depth-frame-5">
-                    <div className="text-wrapper">FitNest</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="depth-frame-6">
-              <div className="depth-frame-7">
-                <div className="depth-frame-8">
-                  <div className="depth-frame-9">
-                    <div className="depth-frame-10">
-                      <div className="text-wrapper-2">Log in</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="depth-frame-11">
-            <div className="depth-frame-12">
-              <div className="depth-frame-13">
-                <div className="depth-frame-14">
-                  <div className="text-wrapper-3">Create a Wellness account</div>
-                </div>
-              </div>
-              <div className="depth-frame-15">
-                <div className="depth-frame-16">
-                  <div className="depth-frame-17">
-                    <div className="depth-frame-18">
-                      <div className="text-wrapper-4">Name</div>
-                    </div>
-                    <div className="depth-frame-19">
-                      <div className="depth-frame-20">
-                        <div className="depth-frame-21">
-                          <div className="depth-frame-14">
-                            <div className="text-wrapper-5">Enter your name</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="depth-frame-15">
-                <div className="depth-frame-16">
-                  <div className="depth-frame-17">
-                    <div className="depth-frame-18">
-                      <div className="text-wrapper-4">Username</div>
-                    </div>
-                    <div className="depth-frame-19">
-                      <div className="depth-frame-20">
-                        <div className="depth-frame-22">
-                          <div className="depth-frame-14">
-                            <div className="text-wrapper-6">Enter your username</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="depth-frame-15">
-                <div className="depth-frame-16">
-                  <div className="depth-frame-17">
-                    <div className="depth-frame-18">
-                      <div className="text-wrapper-4">Password</div>
-                    </div>
-                    <div className="depth-frame-19">
-                      <div className="depth-frame-20">
-                        <div className="depth-frame-23">
-                          <div className="depth-frame-24">
-                            <div className="text-wrapper-7">Enter your password</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="depth-frame-25">
-                <div className="depth-frame-26">
-                  <div className="depth-frame-27">
-                    <div className="depth-frame-14">
-                      <div className="text-wrapper-8">Sign up</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="depth-frame-28" />
-        </div>
+    <header className="header">
+      <div className="logo-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3798a9d0b87570754db1150e552bd05cfe9bd70eadfc7764a0f07862ac781ae?apiKey=6dc1b1172a21495ea8a406717dc53c8f&" alt="FitNest logo" className="logo" />
+        <h1 className="logo-text">FitNest</h1>
       </div>
-    </div>
+      <div className="login-button">
+        <span className="login-text">Log in</span>
+      </div>
+    </header>
   );
-};
+}
 
+function SignupForm() {
+  return (
+    <main className="signup-container">
+      <h2 className="signup-title">Create a Wellness account</h2>
+      <form>
+        <div className="form-group">
+          <label htmlFor="name" className="form-label">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            className="form-input"
+            placeholder="Enter your name"
+            aria-label="Enter your name"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="username" className="form-label">
+            Username
+          </label>
+          <input
+            type="text"
+            id="username"
+            className="form-input"
+            placeholder="Enter your username"
+            aria-label="Enter your username"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password" className="form-label">
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            className="form-input"
+            placeholder="Enter your password"
+            aria-label="Enter your password"
+          />
+        </div>
+        <button type="submit" className="signup-button">
+          Sign up
+        </button>
+      </form>
+    </main>
+  );
+}
+
+function Register() {
+  return (
+      <div className="container">
+        <Header />
+        <SignupForm />
+      </div>
+  );
+}
 export default Register;

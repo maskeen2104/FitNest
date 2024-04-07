@@ -140,7 +140,7 @@
   .galileodesign-text02 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Medium;
     text-align: top;
     font-family: "Lexend-Regular", Helvetica;
@@ -165,7 +165,7 @@
   .galileodesign-text04 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17x;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -191,7 +191,7 @@
   .galileodesign-text06 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -368,7 +368,7 @@
   .galileodesign-text12 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 16px;
+    font-size: 17px;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -395,7 +395,7 @@
   .galileodesign-text14 {
     color: rgba(84, 145, 84, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Regular;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -407,8 +407,8 @@
   .galileodesign-depth5-frame12 {
     top: 26px;
     left: 5%;
-    width: fit-content;
-    height: fit-content;
+    width: 28px;
+    height: 28px;
     display: flex;
     position: absolute;
     align-items: flex-start;
@@ -425,15 +425,15 @@
   }
   .galileodesign-depth7-frame002 {
     width: 24px;
-    height: 24px;
+    height: 60px;
     display: flex;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center;
     flex-direction: column;
   }
   .galileodesign-img-format {
-    width: 24px;
-    height: 24px;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
   }
   .galileodesign-depth4-frame3 {
     gap: 12px;
@@ -534,7 +534,7 @@
   .galileodesign-text16 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 16px;
+    font-size: 17px;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -561,7 +561,7 @@
   .galileodesign-text18 {
     color: rgba(84, 145, 84, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Regular;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -591,10 +591,9 @@
   }
   .galileodesign-depth7-frame004 {
     width: 24px;
-    height: 24px;
+    height: 60px;
     display: flex;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center ;
     flex-direction: column;
   }
   .galileodesign-depth4-frame5 {
@@ -730,7 +729,7 @@
   .galileodesign-text22 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 16px;
+    font-size: 17px;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -757,7 +756,7 @@
   .galileodesign-text24 {
     color: rgba(84, 145, 84, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Regular;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -787,10 +786,9 @@
   }
   .galileodesign-depth7-frame006 {
     width: 24px;
-    height: 24px;
+    height: 60px;
     display: flex;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center;
     flex-direction: column;
   }
   .galileodesign-depth4-frame8 {
@@ -852,7 +850,7 @@
   .galileodesign-text26 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 16px;
+    font-size: 17px;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -879,7 +877,7 @@
   .galileodesign-text28 {
     color: rgba(84, 145, 84, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Regular;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -909,10 +907,9 @@
   }
   .galileodesign-depth7-frame008 {
     width: 24px;
-    height: 24px;
+    height: 50px;
     display: flex;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center;
     flex-direction: column;
   }
   .galileodesign-depth4-frame9 {
@@ -974,7 +971,7 @@
   .galileodesign-text30 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 16px;
+    font-size: 17px;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -1001,7 +998,7 @@
   .galileodesign-text32 {
     color: rgba(84, 145, 84, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Regular;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -1031,10 +1028,9 @@
   }
   .galileodesign-depth7-frame010 {
     width: 24px;
-    height: 24px;
+    height: 50px;
     display: flex;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center;
     flex-direction: column;
   }
   .galileodesign-depth4-frame10 {
@@ -1096,7 +1092,7 @@
   .galileodesign-text34 {
     color: rgba(15, 25, 15, 1);
     height: auto;
-    font-size: 16px;
+    font-size: 17px;
     font-style: Medium;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -1123,7 +1119,7 @@
   .galileodesign-text36 {
     color: rgba(84, 145, 84, 1);
     height: auto;
-    font-size: 14px;
+    font-size: 17px;
     font-style: Regular;
     text-align: left;
     font-family: "Lexend-Regular", Helvetica;
@@ -1153,10 +1149,9 @@
   }
   .galileodesign-depth7-frame012 {
     width: 24px;
-    height: 24px;
+    height: 50px;
     display: flex;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center;
     flex-direction: column;
   }
   

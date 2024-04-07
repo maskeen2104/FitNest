@@ -97,7 +97,7 @@ const Dashboard = (props) => {
                         <img
                           src= {"/src/images/push-up-icon.jpg"}
                           alt="Depth8Frame06258"
-                          className="galileodesign-depth8-frame002"></img>
+                          className="galileodesign-img-format"></img>
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const Dashboard = (props) => {
                         <img
                           src={"/src/images/pull-up-icon.jpg"}
                           alt="Depth8Frame06260"
-                          className="galileodesign-depth8-frame005"
+                          className="galileodesign-img-format"
                         />
                       </div>
                     </div>
@@ -162,7 +162,7 @@ const Dashboard = (props) => {
                         <img
                           src= {"/src/images/sit-up-icon.jpg"}
                           alt="Depth8Frame06263"
-                          className="galileodesign-depth8-frame008"
+                          className="galileodesign-img-format"
                         />
                       </div>
                     </div>

@@ -431,7 +431,7 @@
     flex-shrink: 0;
     flex-direction: column;
   }
-  .galileodesign-depth8-frame002 {
+  .galileodesign-img-format {
     width: 24px;
     height: 24px;
   }
@@ -596,10 +596,6 @@
     align-items: flex-start;
     flex-shrink: 0;
     flex-direction: column;
-  }
-  .galileodesign-depth8-frame005 {
-    width: 24px;
-    height: 24px;
   }
   .galileodesign-depth4-frame5 {
     gap: 12px;
@@ -797,10 +793,6 @@
     flex-shrink: 0;
     flex-direction: column;
   }
-  .galileodesign-depth8-frame008 {
-    width: 24px;
-    height: 24px;
-  }
   .galileodesign-depth4-frame8 {
     gap: 16px;
     width: 960px;
@@ -922,10 +914,6 @@
     align-items: flex-start;
     flex-shrink: 0;
     flex-direction: column;
-  }
-  .galileodesign-depth8-frame011 {
-    width: 24px;
-    height: 24px;
   }
   .galileodesign-depth4-frame9 {
     gap: 16px;
@@ -1049,10 +1037,6 @@
     flex-shrink: 0;
     flex-direction: column;
   }
-  .galileodesign-depth8-frame014 {
-    width: 24px;
-    height: 24px;
-  }
   .galileodesign-depth4-frame10 {
     gap: 16px;
     width: 960px;
@@ -1174,9 +1158,5 @@
     align-items: flex-start;
     flex-shrink: 0;
     flex-direction: column;
-  }
-  .galileodesign-depth8-frame017 {
-    width: 24px;
-    height: 24px;
   }
   

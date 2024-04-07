@@ -20,12 +20,12 @@ import requests
 import time
 import glob
 
-
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app)
 @app.route("/", methods = ["GET", "POST"])
 def file_upload():
-    uploads_dir = "/Users/maskeenkaur/FitNest/model/uploads_dir"
+    uploads_dir = "/Users/rythemshah/FitNest/model/uploads_dir"
     if request.method == "POST":
         if 'file' not in request.files:
             return "No file part in the request", 400

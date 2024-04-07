@@ -49,6 +49,11 @@
   margin: 20px 0;
 }
 
+.center {
+  margin: auto;
+  width: 20%;
+}
+
 .start-journey-button {
   background-color: var(--soft-green);
   color: var(--white);

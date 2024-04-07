@@ -180,6 +180,18 @@ const handleClickPullUps = () => {
                       </div>
                     </div>
                   </button>
+                  
+                  <div className="galileodesign-depth4-frame6">
+                    <div className="galileodesign-depth5-frame008">
+                      <div className="galileodesign-depth6-frame013">
+                        <span className="galileodesign-text20">
+                          <span>Completed</span>
+                          
+                        </span>
+                      </div>
+                    </div>
+                    
+                  </div>
                   <button className="galileodesign-depth4-frame7">
                     <div className="galileodesign-depth5-frame009">
                       <div className="galileodesign-depth6-frame014"></div>
@@ -212,15 +224,6 @@ const handleClickPullUps = () => {
                       </div>
                     </div>
                   </button>
-                  <div className="galileodesign-depth4-frame6">
-                    <div className="galileodesign-depth5-frame008">
-                      <div className="galileodesign-depth6-frame013">
-                        <span className="galileodesign-text20">
-                          <span>Completed</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

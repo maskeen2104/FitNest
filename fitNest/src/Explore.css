@@ -31,7 +31,8 @@
     width: 100%;
 }
 .button-header{
-    align-content: row;
+    align-content: flex-end;
+    margin: auto;
 }
 .hbutton {
     background-color:#fafafa;;
@@ -40,6 +41,18 @@
     flex-shrink: 0;
     flex-direction: column;
     opacity: 1;
+  }
+  .button-text {
+    color: black;
+    height: auto;
+    font-size: 17px;
+    font-style: Medium;
+    text-align: top;
+    font-family: "Lexend-Regular", Helvetica;
+    font-weight: 500;
+    line-height: 21px;
+    font-stretch: normal;
+    text-decoration: none;
   }
 
 .logo-container {

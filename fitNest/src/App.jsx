@@ -8,7 +8,6 @@ import Register from './Register';
 import PushUps from './challenge/challenge1.jsx'
 import AnotherPage from './challenge/challenge1Video.jsx'
 
-import PushUps from './challenge/challenge1.jsx';
 import Dashboard from './Dashboard.jsx';
 
 import './App.css';

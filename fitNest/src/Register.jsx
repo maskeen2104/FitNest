@@ -27,6 +27,7 @@ function SignupForm() {
           <input
             type="text"
             id="name"
+            required ={true}
             className="form-input"
             placeholder="Enter your name"
             aria-label="Enter your name"
@@ -38,6 +39,7 @@ function SignupForm() {
           </label>
           <input
             type="text"
+            required ={true}
             id="username"
             className="form-input"
             placeholder="Enter your username"
@@ -51,6 +53,7 @@ function SignupForm() {
           <input
             type="password"
             id="password"
+            required ={true}
             className="form-input"
             placeholder="Enter your password"
             aria-label="Enter your password"
@@ -64,7 +67,7 @@ function SignupForm() {
   );
 }
 
-function Register() {
+export const Register = () => {
   return (
       <div className="container">
         <Header />

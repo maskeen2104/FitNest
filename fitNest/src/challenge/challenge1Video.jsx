@@ -24,10 +24,10 @@ const AnotherPage = () => {
     }, []);
 
 
-    const handleFileChange3 = async (id, pushups) => {
+    const handleFileChange3 = async (id, pushups, progress, days) => {
         if (testPassed) {
             const pushUpsToDo = Number(pushups) + 4;
-        
+            const prog = parseInt(progress) + 5; 
             try {
                 const response = await fetch(`http://localhost:30049/users/${id}`, {
                     method: 'PUT',
@@ -36,9 +36,12 @@ const AnotherPage = () => {
                     },
                     body: JSON.stringify({
                         challenges: [
-                            {
+                            { 
+                                progress: `${prog}%`,
                                 completed: true,
-                                pushUpsToDo: pushUpsToDo
+                                pushUpsToDo: pushUpsToDo,
+                                name: "Pushups",
+                                daysCompleted: days
                             }
                         ]
                     }),
@@ -128,7 +131,7 @@ const AnotherPage = () => {
                         dataAdded[0].challenges[0].pushUpsToDo <= pushups ? (
                             <p className="description2" style={{ fontSize: "40px", marginLeft: "40%" }}>
                                 {setTestPassed(true)};
-                                {handleFileChange3(dataAdded[0].user_id, dataAdded[0].challenges[0].pushUpsToDo)};
+                                {handleFileChange3(dataAdded[0].user_id, dataAdded[0].challenges[0].pushUpsToDo, dataAdded[0].challenges[0].progress, dataAdded[0].challenges[0].daysCompleted)};
                                 <p className="description2" style={{ fontSize: "40px", marginLeft: "40%" }}>
                                     Congrats u have passed
                                 </p>

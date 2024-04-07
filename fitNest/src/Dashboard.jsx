@@ -205,8 +205,12 @@ import './Dashboard.css'
 
 
 const Dashboard = (props) => {
-  const navigate = useNavigate();
   const [entireData, setEntireData] = useState([]);
+  const navigate = useNavigate();
+  
+  const handlePush = () => {
+    navigate("/challenge1");
+};
 
   useEffect(() => {
   const getTheData = async() => {
@@ -285,7 +289,7 @@ const Dashboard = (props) => {
                         </span>
                       </div>
                   </div>
-                  <button className="galileodesign-depth4-frame21">
+                  <button className="galileodesign-depth4-frame21" onClick = {handlePush}>
                     <div className="galileodesign-depth5-frame004">
                       <div className="galileodesign-depth6-frame007"></div>
                       <div className="galileodesign-depth6-frame2">

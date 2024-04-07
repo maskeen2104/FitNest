@@ -77,7 +77,7 @@ export const Login = () => {
                 </div>
               </div>
               <div className="depth-frame-30">
-                <button className="sign-in-button" onClick={() => navigate("/login")}>
+                <button className="sign-in-button" onClick={() => navigate("/dashboard")}>
                   <div className="depth-frame-32">
                     <div className="depth-frame-9">
                       <div className="text-wrapper-sign">Sign in</div>

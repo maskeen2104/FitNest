@@ -223,6 +223,7 @@ const Body = ({ navigate }) => {
 const challengeData = [
   { image: "/src/images/push-up-icon.jpg", title: "Push-up Challenge" },
   { image: "/src/images/pull-up-icon.jpg", title: "Pull-up Challenge" },
+  { image: "/src/images/sit-up-icon.jpg", title: "Sit-up Challenge"}
   // Add more challenges as needed
 ];
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Login.css";
-import {Link} from 'react-router-dom';
-import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 export const Login = () => {
+  const navigate = useNavigate();
   return (
     <div className="login-page">
       <div className="depth-frame">
@@ -77,7 +77,7 @@ export const Login = () => {
                 </div>
               </div>
               <div className="depth-frame-30">
-                <button className="sign-in-button" onClick={()=> {useNavigate('./Dashboard')}}>
+                <button className="sign-in-button" onClick={() => navigate("/login")}>
                   <div className="depth-frame-32">
                     <div className="depth-frame-9">
                       <div className="text-wrapper-sign">Sign in</div>
@@ -86,7 +86,7 @@ export const Login = () => {
                 </button>
               </div>
               <div className="depth-frame-30">
-                <button className="depth-frame-register-button" onClick={()=> {useNavigate('./register')}}>
+                <button className="depth-frame-register-button" onClick={() => navigate("/register")}>
                   <div className="depth-frame-35">
                     <div className="depth-frame-9">
                       <div className="text-wrapper-reg">Create an account</div>

@@ -12,7 +12,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white;
   }
   .galileodesign-depth0-frame0 {
     width: 100%;
@@ -22,10 +22,10 @@
     align-items: flex-start;
     flex-shrink: 0;
     flex-direction: column;
-    background-color: rgba(249, 249, 249, 1);
+    background-color: white;
   }
   .galileodesign-depth1-frame0 {
-    width: 1280px;
+    width: 100%;
     height: 861px;
     display: flex;
     align-items: flex-start;
@@ -33,13 +33,13 @@
     flex-direction: column;
   }
   .galileodesign-depth2-frame0 {
-    width: 1280px;
+    width: 100%;
     height: 65px;
     display: flex;
     padding: 12px 40px;
     align-items: center;
     flex-shrink: 0;
-    border-color: rgba(229, 232, 234, 1);
+    border-color: white;
     border-style: solid;
     border-width: 0 0 1px;
     justify-content: space-between;
@@ -92,7 +92,7 @@
     font-size: 18px;
     font-style: Bold;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 700;
     line-height: 22.5px;
     font-stretch: normal;
@@ -124,12 +124,14 @@
     flex-direction: column;
   }
   .galileodesign-depth5-frame001 {
-    width: 38.515625px;
-    height: 21px;
+    width: 40;
+    background-color: white;
+    height: 30px;
     display: flex;
     align-items: flex-start;
     flex-shrink: 0;
     flex-direction: column;
+    opacity: 1;
   }
   .galileodesign-depth6-frame002 {
     display: flex;
@@ -142,8 +144,8 @@
     height: auto;
     font-size: 14px;
     font-style: Medium;
-    text-align: left;
-    font-family: Manrope;
+    text-align: top;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 21px;
     font-stretch: normal;
@@ -169,7 +171,7 @@
     font-size: 14px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 21px;
     font-stretch: normal;
@@ -195,7 +197,7 @@
     font-size: 14px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 21px;
     font-stretch: normal;
@@ -228,7 +230,7 @@
     flex-shrink: 0;
     flex-direction: column;
   }
-  .galileodesign-depth4-frame02 {
+  .galileodesign-title {
     gap: 12px;
     width: 960px;
     height: 77px;
@@ -271,19 +273,18 @@
     font-size: 36px;
     font-style: ExtraBold;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 800;
     line-height: 45px;
     font-stretch: normal;
     text-decoration: none;
   }
-  .galileodesign-depth4-frame1 {
-    width: 960px;
+  .galileodesign-subheading1{
+    width: 100%;
     height: 59.5px;
     display: flex;
-    padding: 20px 16px 12px;
+    padding: 10px 16px 12px;
     align-items: flex-start;
-    flex-shrink: 0;
   }
   .galileodesign-depth5-frame003 {
     width: 116.171875px;
@@ -303,13 +304,14 @@
     color: rgba(15, 25, 15, 1);
     height: auto;
     font-size: 22px;
-    font-style: Bold;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 700;
     line-height: 27.5px;
     font-stretch: normal;
     text-decoration: none;
+    margin-right: -0.86px;
+    margin-top: -20px;
   }
   .galileodesign-depth4-frame21 {
     gap: 16px;
@@ -320,7 +322,7 @@
     position: relative;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(249, 249, 249, 1);
+    background-color: white;
   }
   .galileodesign-depth5-frame004 {
     gap: 16px;
@@ -373,7 +375,7 @@
     font-size: 16px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 24px;
     font-stretch: normal;
@@ -400,7 +402,7 @@
     font-size: 14px;
     font-style: Regular;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 400;
     line-height: 21px;
     font-stretch: normal;
@@ -464,7 +466,7 @@
     flex-shrink: 0;
     border-radius: 4px;
     flex-direction: column;
-    background-color: rgba(209, 229, 209, 1);
+    background-color: white;
   }
   .galileodesign-depth6-frame1 {
     width: 742.390625px;
@@ -486,7 +488,7 @@
     position: relative;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(249, 249, 249, 1);
+    background-color: white;
   }
   .galileodesign-depth5-frame006 {
     gap: 16px;
@@ -539,7 +541,7 @@
     font-size: 16px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 24px;
     font-stretch: normal;
@@ -566,7 +568,7 @@
     font-size: 14px;
     font-style: Regular;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 400;
     line-height: 21px;
     font-stretch: normal;
@@ -630,7 +632,7 @@
     flex-shrink: 0;
     border-radius: 4px;
     flex-direction: column;
-    background-color: rgba(209, 229, 209, 1);
+    background-color: white;
   }
   .galileodesign-depth6-frame11 {
     width: 696px;
@@ -671,7 +673,7 @@
     font-size: 22px;
     font-style: Bold;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 700;
     line-height: 27.5px;
     font-stretch: normal;
@@ -686,7 +688,7 @@
     position: relative;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(249, 249, 249, 1);
+    background-color: white;
   }
   .galileodesign-depth5-frame009 {
     gap: 16px;
@@ -739,7 +741,7 @@
     font-size: 16px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 24px;
     font-stretch: normal;
@@ -766,7 +768,7 @@
     font-size: 14px;
     font-style: Regular;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 400;
     line-height: 21px;
     font-stretch: normal;
@@ -865,7 +867,7 @@
     font-size: 16px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 24px;
     font-stretch: normal;
@@ -892,7 +894,7 @@
     font-size: 14px;
     font-style: Regular;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 400;
     line-height: 21px;
     font-stretch: normal;
@@ -991,7 +993,7 @@
     font-size: 16px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 24px;
     font-stretch: normal;
@@ -1018,7 +1020,7 @@
     font-size: 14px;
     font-style: Regular;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 400;
     line-height: 21px;
     font-stretch: normal;
@@ -1117,7 +1119,7 @@
     font-size: 16px;
     font-style: Medium;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 500;
     line-height: 24px;
     font-stretch: normal;
@@ -1144,7 +1146,7 @@
     font-size: 14px;
     font-style: Regular;
     text-align: left;
-    font-family: Manrope;
+    font-family: "Lexend-Regular", Helvetica;
     font-weight: 400;
     line-height: 21px;
     font-stretch: normal;

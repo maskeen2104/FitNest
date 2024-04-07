@@ -1,75 +1,79 @@
 import React, { useState, useEffect } from "react";
-import "./challenge1.css"
+import { useNavigate } from "react-router-dom";
+
+import "./challenge1.css";
+
 const PushUps = () => {
-    const [dataAdded, setEntireData] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  const [dataAdded, setEntireData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        const getChallengeRequirements = async () => {
-            try {
-                const response = await fetch("http://localhost:30049/userlist");
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-                setEntireData(data);
-                console.log(data);
-            } catch (error) {
-                console.error("Failed to fetch data:", error);
-                setError(error.message);
-            } finally {
-                setLoading(false);
-            }
-        };
 
-        getChallengeRequirements();
-    }, []);
+  const handleSubmit = () => {
+    navigate('/anotherPageChallenge1');
+  };
 
-    if (loading) {
-        return <div>Loading...</div>;
-    }
+  useEffect(() => {
+    const getChallengeRequirements = async () => {
+      try {
+        const response = await fetch("http://localhost:30049/userlist");
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setEntireData(data);
+        console.log(data);
+      } catch (error) {
+        console.error("Failed to fetch data:", error);
+        setError("Failed to fetch data. Please try again later.");
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    if (error) {
-        return <div>Error fetching data: {error}</div>;
-    }
+    getChallengeRequirements();
+  }, []);
 
-    const ProgressBar = ({ progress }) => (
-      <div className="progress-bar">
-        <div className="progress" style={{ width: `${progress}%` }} />
-      </div>
-    );
-    
-    const Button = ({ children, className }) => (
-      <button className={`button ${className}`}>{children}</button>
-    );
-        
-      return (
-        <main className="container">
-          <section className="challenge-info">
-            <h1 className="title">Push up challenge</h1>
-            
-            {dataAdded.length > 0 && (
-              <p className="description">
-              Do {dataAdded[0].challenges[0].pushUpsToDo} push-ups every day for 30 days. Track your progress and see
-              real-time results with our camera feature.
-              </p>
-            )}
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
-            <div className="progress-info">
-              <div className="progress-details">
-                <span className="completed-days">
-                  1/30 Days Completed
-                </span>
-                <span className="progress-percentage">{dataAdded[0].challenges[0].progress}%</span>
-              </div>
-              <ProgressBar progress={dataAdded[0].challenges[0].progress} />
-            </div>
-            <Button className="start-button">Start Challenge</Button>
-            <Button className="not-now-button">Not Now</Button>
-          </section>
-        </main>
-      );
-    }
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const ProgressBar = ({ progress }) => (
+    <div className="progress-bar">
+      <div className="progress" style={{ width: `${progress}%` }} />
+    </div>
+  );
+
+  return (
+    <div className="container">
+      <section className="challenge-info">
+        <h1 className="title" style = {{ fontSize: "30px", marginLeft: "-20px"}}>Push up challenge </h1>
+        {dataAdded.length > 0 && (
+          <p className="description" style = {{ fontSize: "20px"}}>
+            Do {dataAdded[0].challenges[0].pushUpsToDo} push-ups every day for 30 days. Track your progress and see
+            real-time results with our camera feature.
+          </p>
+        )}
+
+        <div className="progress-info">
+          <div className="progress-details">
+            <span className="completed-days" style = {{ fontSize: "20px", marginLeft: "-200px"}}>
+              {dataAdded[0].challenges[0].daysCompleted}/30 Days Completed
+            </span>
+            <span className="progress-percentage" style = {{ fontSize: "20px", marginLeft: "-50%"}}> {dataAdded[0].challenges[0].progress}</span>
+          </div>
+          <ProgressBar progress={dataAdded[0].challenges[0].progress} />
+        </div>
+        <button className="start-button" onClick={handleSubmit} style = {{ height: "80px", marginLeft: "450px"}}>Start Challenge</button>
+        <button className="not-now-button" style = {{ height: "80px"}}>Not Now</button>
+      </section>
+    </div>
+  );
+};
 
 export default PushUps;
